@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FavouritePage = () => {
     return <h1>Favourite Page</h1>;
