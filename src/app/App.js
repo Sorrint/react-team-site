@@ -1,7 +1,8 @@
+
+import React from "react";
 import FavouritePage from "./pages/favourites/favouritePage";
 import MainPage from "./pages/mainPage/mainPage";
 import ParticipantPage from "./pages/participantPage/participantPage";
-import { Navigate, useRoutes } from "react-router-dom";
 
 function App() {
     const routes = useRoutes([
