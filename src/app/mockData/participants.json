@@ -1,0 +1,9 @@
+[
+    {"name": "Антон",
+    "surname": "Лебедев",
+    "age": 36,
+    "photo": "image",
+    "about": "Frontend developer из Иркутска.",
+    "technologies": {"html": 27, "css": 63, "JS": 44, "React": 68, "Express": 15, "NodeJS": 10}
+    }
+]
