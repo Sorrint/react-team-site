@@ -1,7 +1,7 @@
 
 React team project by 4 flow 2 team
 =======
-Устанавливаем в vscode плагини eslint, prittier, stylelint
+Устанавливаем в vscode плагины eslint, prittier, stylelint
 
 Для форматирования файла при нажатии клавиш alt + q откройте файл keybindings.json из командной Command Pallete shift+command+P (или в настройках хоткеев значок настроек ) и добавьте в массив следующие настройки:
 
