@@ -1,5 +1,15 @@
+import FavouritePage from './pages/favourites/favouritePage';
+import MainPage from './pages/mainPage/mainPage';
+import ParticipantPage from './pages/participantPage/participantPage';
+
 function App() {
-    return <div className="App">App</div>;
+    return (
+        <>
+            <MainPage />
+            <FavouritePage />
+            <ParticipantPage />
+        </>
+    );
 }
 
 export default App;
