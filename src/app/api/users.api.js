@@ -1,4 +1,4 @@
-import Users from '../mockData/participants.json'
+import Users from "../mockData/participants.json";
 
 const fetchAll = () =>
     new Promise((resolve) => {
@@ -9,4 +9,4 @@ const fetchAll = () =>
 
 export default {
     fetchAll
-}
+};
