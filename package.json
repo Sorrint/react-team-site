@@ -18,9 +18,8 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "stylelint": "stylelint '**/*{.css,.scss}'",
-        "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix",
-        "format": "npx prettier --write ."
+        "format": "npx prettier --write .",
+        "stylelint": "stylelint '**/*{.css,.scss}' --fix"
     },
     "eslintConfig": {
         "extends": [
