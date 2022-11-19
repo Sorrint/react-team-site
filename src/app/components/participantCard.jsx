@@ -12,15 +12,7 @@ import Button from "./button";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const ParticipantCard = ({
-    image,
-    name,
-    surname,
-    age,
-    about,
-    description,
-    userId
-}) => {
+const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
         return null;
     };
@@ -39,19 +31,10 @@ const ParticipantCard = ({
                 </div>
                 <div className="font-bold mb-2">Возраст: {age}</div>
                 <p className="text-gray-700 text-base">{about}</p>
-                {description && (
-                    <p className="text-gray-700 text-base">{description}</p>
-                )}
             </div>
             <div className="px-6 pt-4 pb-2">
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
                     #photography
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    #travel
-                </span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    #winter
                 </span>
             </div>
             <div className="flex justify-around">
@@ -78,6 +61,7 @@ ParticipantCard.propTypes = {
     age: PropTypes.string,
     about: PropTypes.string,
     userId: PropTypes.string,
-    description: PropTypes.string
+    description: PropTypes.string,
+    socialNetworks: PropTypes.array
 };
 export default ParticipantCard;
