@@ -23,6 +23,7 @@ const BreadCrumbs = ({ pathname }) => {
     const isMainPage = pathname === "/";
     const mainClasses = "breadcrumb-item" + (isMainPage ? " active" : "");
     const getText = (pathname) => {
+        console.log(pathname);
         const route = routes.find((item) => item.path === pathname);
         return route.name;
     };

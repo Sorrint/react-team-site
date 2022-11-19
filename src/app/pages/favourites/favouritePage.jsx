@@ -8,8 +8,9 @@ const FavouritePage = () => {
     return (
         <>
             <BreadCrubms pathname={location.pathname} />
-            <h1>Favourite Page</h1>
             <Progress value={45} type="bar" name="CSS" />
+
+            <h1>Favourite Page</h1>
         </>
     );
 };
