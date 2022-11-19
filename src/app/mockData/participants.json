@@ -5,7 +5,7 @@
         "surname": "Лебедев",
         "age": 36,
         "roleInTeam": "Team Leader",
-        "photo": "image",
+        "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
         "technologies": {
@@ -33,6 +33,27 @@
             "React": 67,
             "Express": 14,
             "NodeJS": 9
+        }
+    },
+    {
+        "_id": "shabalin_yakov",
+        "name": "Яков",
+        "surname": "Шабалин",
+        "age": "31",
+        "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
+        "about": "Junior Frontend developer из Нягани.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "socialNetworks": {
+            "GitHub": "https://github.com/shabalinyakov",
+            "Telegram": "https://t.me/shabalin_yakov"
+        },
+        "technologies": {
+            "html": 60,
+            "css": 70,
+            "JS": 60,
+            "React": 80,
+            "Express": 80,
+            "NodeJS": 70
         }
     }
 ]

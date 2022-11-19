@@ -49,6 +49,6 @@ Button.propTypes = {
     onClick: PropTypes.func,
     border: PropTypes.string,
     content: PropTypes.string,
-    arrow: PropTypes.boolean
+    arrow: PropTypes.bool
 };
 export default Button;

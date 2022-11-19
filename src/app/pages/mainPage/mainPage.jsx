@@ -9,7 +9,6 @@ const MainPage = () => {
         <>
             <Navbar />
             <BreadCrumbs pathname={location.pathname} />
-
             <Hero />
             <Team />
         </>
