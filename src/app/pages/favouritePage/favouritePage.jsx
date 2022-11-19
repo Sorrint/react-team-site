@@ -8,7 +8,6 @@ const FavouritePage = () => {
     const location = useLocation();
     return (
         <>
-            <Navbar />
             <BreadCrubms pathname={location.pathname} />
             <div className="wrapper">
                 <Progress value="30" name="CSS" type="circle" />

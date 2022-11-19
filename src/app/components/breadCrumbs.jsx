@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+
 const BreadCrumbs = ({ pathname }) => {
     const [elements, setElements] = useState();
 
@@ -37,7 +38,7 @@ const BreadCrumbs = ({ pathname }) => {
     };
     if (elements) {
         return (
-            <nav className="breadcrumbs">
+            <nav className="breadcrumbs py-4 px-8">
                 <ol className="breadcrumb flex text-slate-300">
                     {elements.map((el) => (
                         <li key={el}>{getText(el)}</li>
