@@ -32,11 +32,6 @@ const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
                 <div className="font-bold mb-2">Возраст: {age}</div>
                 <p className="text-gray-700 text-base">{about}</p>
             </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    #photography
-                </span>
-            </div>
             <div className="flex justify-around">
                 <div className="px-2">
                     <Link to={`/participant_page/${userId}`}>
@@ -60,8 +55,7 @@ ParticipantCard.propTypes = {
     surname: PropTypes.string,
     age: PropTypes.string,
     about: PropTypes.string,
-    userId: PropTypes.string,
-    description: PropTypes.string,
-    socialNetworks: PropTypes.array
+    userId: PropTypes.string
 };
+
 export default ParticipantCard;
