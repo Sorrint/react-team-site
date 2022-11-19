@@ -1,49 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Navigate } from "react-router-dom";
 const BreadCrumbs = ({ pathname }) => {
-    const handleClick = () => {
-        console.log("click");
-        return <Navigate to="/" />;
-    };
+    const [elements, setElements] = useState();
+
+    useEffect(() => {
+        setElements(pathname.split("/"));
+    }, []);
+
     const routes = [
         {
-            path: "/",
+            path: "",
             name: "Главная"
         },
         {
-            path: "/participant_page",
+            path: "participant_page",
             name: "Страница участника"
         },
         {
-            path: "/favourite",
+            path: "favourite",
             name: "Избранное"
+        },
+        {
+            path: "lebedev_anton",
+            name: "Лебедев Антон"
+        },
+        {
+            path: "zabava_dmitriy",
+            name: "Забава Дмитрий"
         }
     ];
-    const isMainPage = pathname === "/";
-    const mainClasses = "breadcrumb-item" + (isMainPage ? " active" : "");
+
     const getText = (pathname) => {
-        console.log(pathname);
         const route = routes.find((item) => item.path === pathname);
+        if (!route) return "";
         return route.name;
     };
-    return (
-        <nav>
-            <ol className="breadcrumb flex text-slate-300">
-                <li className={`${mainClasses} pr-0`}>
-                    <button onClick={handleClick}>Главная</button>
-                </li>
-                {!isMainPage && (
-                    <>
-                        <li>/</li>
-                        <li className="breadcrumb-item active pl-0 pr-0">
-                            {getText(pathname)}
-                        </li>
-                    </>
-                )}
-            </ol>
-        </nav>
-    );
+    if (elements) {
+        return (
+            <nav>
+                <ol className="breadcrumb flex text-slate-300">
+                    {elements.map((el) => (
+                        <li key={el}>{getText(el)}</li>
+                    ))}
+                </ol>
+            </nav>
+        );
+    }
 };
 
 BreadCrumbs.propTypes = {
