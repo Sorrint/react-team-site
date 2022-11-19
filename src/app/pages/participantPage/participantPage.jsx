@@ -9,7 +9,6 @@ import Slider from "../../components/slider";
 
 import AboutParticipant from "../../components/ui/aboutParticipant";
 
-
 const ParticipantPage = () => {
     const { userId } = useParams();
     const location = useLocation();
@@ -17,7 +16,6 @@ const ParticipantPage = () => {
     useEffect(() => {
         API.users.getById(userId).then((data) => setParticipant(data));
     }, []);
-
 
     if (participant) {
         return (
@@ -53,7 +51,6 @@ const ParticipantPage = () => {
             </>
         );
     }
-
 };
 
 export default ParticipantPage;
