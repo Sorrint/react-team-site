@@ -7,13 +7,12 @@ const Team = () => {
     useEffect(() => {
         API.users.fetchAll().then((data) => setUsers(data));
     }, []);
-    console.log(users);
 
     return (
         users && (
             <div
                 name="team"
-                className="w-full h-full bg-[#0a192f] text-gray-300 py-11"
+                className="w-full h-full bg-gradient-to-l from-[#201958] to-[#4e54c8] text-gray-300 py-11"
             >
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     <div className="sm:text-right py-8 px-4">
