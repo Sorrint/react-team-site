@@ -4,13 +4,13 @@ import MainPage from "./app/pages/mainPage/mainPage";
 import { Navigate } from "react-router-dom";
 import React from "react";
 
-const routes = (isLoggedIn, location) => [
+const routes = () => [
     {
         path: "/",
         element: <MainPage />
     },
     {
-        path: "favorite",
+        path: "favourite",
         element: <FavouritePage />
     },
     {

@@ -1,27 +1,14 @@
 import { useRoutes } from "react-router-dom";
-import routes from "../router";
+import routes from "../routes";
 import React from "react";
+import Background from "./components/background";
 
 function App() {
     // comment
     const elements = useRoutes(routes());
     return (
         <>
-            <div className="area">
-                {elements}
-                <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+            <Background>{elements}</Background>
         </>
     );
 }
