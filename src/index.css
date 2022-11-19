@@ -178,7 +178,7 @@ code {
 }
 
 .btn {
-    @apply py-1.5 px-6 border-2 text-white flex items-center  cursor-pointer;
+    @apply py-1.5 px-6 border-2 text-white flex items-center hover:border-gray-600 duration-300 cursor-pointer;
 }
 
 .btn-rounded {
