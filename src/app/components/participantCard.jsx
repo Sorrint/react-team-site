@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
-        return null;
+        return localStorage.setItem("userId", JSON.stringify(userId));
     };
     return (
         <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg">
