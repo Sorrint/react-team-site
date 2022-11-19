@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Navigate } from "react-router-dom";
-const BreadCrubms = ({ pathname }) => {
+const BreadCrumbs = ({ pathname }) => {
     const handleClick = () => {
         console.log("click");
         return <Navigate to="/" />;
@@ -45,9 +45,9 @@ const BreadCrubms = ({ pathname }) => {
     );
 };
 
-BreadCrubms.propTypes = {
+BreadCrumbs.propTypes = {
     pathname: PropTypes.string.isRequired,
     onGoMain: PropTypes.func
 };
 
-export default BreadCrubms;
+export default BreadCrumbs;
