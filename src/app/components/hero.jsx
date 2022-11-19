@@ -3,9 +3,9 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Hero = () => {
     return (
-        <div name="home" className="w-full h-screen bg-[#0a192f]/50">
+        <div name="hero" className="w-full h-screen">
             {/* Container */}
-            <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+            <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-10">
                 <p className="text-yellow-400 py-2">
                     Крутая команда разработчиков
                 </p>
