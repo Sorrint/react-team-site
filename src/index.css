@@ -178,7 +178,7 @@ code {
 }
 
 .btn {
-    @apply font-bold py-0.5 px-4 border hover:border-amber-500 cursor-help;
+    @apply font-bold py-0.5 px-4 border hover:border-amber-500 cursor-pointer;
 }
 
 .btn-rounded {
