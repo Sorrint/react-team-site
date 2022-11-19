@@ -2,6 +2,7 @@ import { useRoutes } from "react-router-dom";
 import routes from "../routes";
 import React from "react";
 import Background from "./components/background";
+import "flowbite";
 
 function App() {
     // comment
