@@ -159,6 +159,10 @@ code {
     animation-duration: 11s;
 }
 
+.button-hidden {
+    z-index: 100;
+}
+
 @keyframes animate {
     0% {
         transform: translateY(0) rotate(0deg);
