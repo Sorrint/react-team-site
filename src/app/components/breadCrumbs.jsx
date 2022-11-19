@@ -31,18 +31,23 @@ const BreadCrumbs = ({ pathname }) => {
         }
     ];
 
-    const getText = (pathname) => {
-        const route = routes.find((item) => item.path === pathname);
+    const getText = (element, length) => {
+        const route = routes.find((item) => item.path === element);
+        const index = elements.findIndex((item) => item === element);
+
+        console.log(index);
         if (!route) return "";
-        return route.name;
+        return index + 1 === length ? route.name : `${route.name} /`;
     };
     if (elements) {
         return (
             <nav className="breadcrumbs py-4 px-8">
                 <ol className="breadcrumb flex text-slate-300">
-                    {elements.map((el) => (
-                        <li key={el}>{getText(el)}</li>
-                    ))}
+                    {pathname === "/"
+                        ? "Главная"
+                        : elements.map((el) => (
+                              <li key={el}>{getText(el, elements.length)}</li>
+                          ))}
                 </ol>
             </nav>
         );

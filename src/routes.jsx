@@ -1,5 +1,6 @@
 import ParticipantPage from "./app/pages/participantPage";
-import FavouritePage from "./app/pages/favourites/favouritePage";
+import FavouritePage from "./app/pages/favouritePage";
+
 import MainPage from "./app/pages/mainPage/mainPage";
 import { Navigate } from "react-router-dom";
 import React from "react";
