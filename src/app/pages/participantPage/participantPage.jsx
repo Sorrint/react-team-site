@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
+
 import { Link, useParams } from "react-router-dom";
+
+
 import API from "../../api";
 
 const ParticipantPage = () => {
@@ -8,6 +11,7 @@ const ParticipantPage = () => {
     useEffect(() => {
         API.users.getById(userId).then((data) => setParticipant(data));
     }, []);
+
     useEffect(() => {
         console.log("participant", participant);
     }, [participant]);
