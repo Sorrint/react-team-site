@@ -1,15 +1,14 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import BreadCrubms from "../../components/breadCrumbs";
-import Progress from "../../components/progress";
+import Navbar from "../../components/navBar";
 
 const FavouritePage = () => {
     const location = useLocation();
     return (
         <>
             <BreadCrubms pathname={location.pathname} />
-            <Progress value={45} type="bar" name="CSS" />
-
+            <Navbar />
             <h1>Favourite Page</h1>
         </>
     );
