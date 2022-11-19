@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -20,24 +21,24 @@ const Navbar = () => {
             {/* menu */}
             <ul className="hidden md:flex">
                 <li>
-                    <Link to="/" smooth={true} duration={500}>
+                    <Link to="hero" smooth="true" duration={500}>
                         Главная
                     </Link>
                 </li>
                 <li>
-                    <Link to="favorite" smooth={true} duration={500}>
+                    <Link to="team" smooth="true" duration={500}>
                         Наша команда
                     </Link>
                 </li>
                 <li>
-                    <Link to="portfolio" smooth={true} duration={500}>
+                    <NavLink to="portfolio" smooth="true" duration={500}>
                         Портфолио
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500}>
+                    <NavLink to="contacts" smooth="true" duration={500}>
                         Контакты
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
@@ -57,8 +58,8 @@ const Navbar = () => {
                 <li className="py-6 text-4xl">
                     <Link
                         onClick={handleClick}
-                        to="/"
-                        smooth={true}
+                        to="hero"
+                        smooth="true"
                         duration={500}
                     >
                         Главная
@@ -68,8 +69,8 @@ const Navbar = () => {
                     {" "}
                     <Link
                         onClick={handleClick}
-                        to="favorite"
-                        smooth={true}
+                        to="team"
+                        smooth="true"
                         duration={500}
                     >
                         Наша команда
@@ -77,26 +78,26 @@ const Navbar = () => {
                 </li>
                 <li className="py-6 text-4xl">
                     {" "}
-                    <Link
+                    <NavLink
                         onClick={handleClick}
                         to="portfolio"
-                        smooth={true}
+                        smooth="true"
                         duration={500}
                     >
                         Портфолио
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="py-6 text-4xl">
                     {" "}
-                    <Link
+                    <NavLink
                         onClick={handleClick}
-                        to="contact"
-                        smooth={true}
+                        to="contacts"
+                        smooth="true"
                         duration={500}
                     >
                         Контакты
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
