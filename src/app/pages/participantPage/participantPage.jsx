@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
 
+import { Link, useLocation, useParams } from "react-router-dom";
 import API from "../../api";
 import Badge from "../../components/badge";
 import BreadCrumbs from "../../components/breadCrumbs";
 import Navbar from "../../components/navBar";
-import Slider from "../../components/slider";
+=========
+import { Link, useParams } from "react-router-dom";
 import AboutParticipant from "../../components/ui/aboutParticipant";
+import API from "../../api";
+>>>>>>>>> Temporary merge branch 2
 
 const ParticipantPage = () => {
     const { userId } = useParams();

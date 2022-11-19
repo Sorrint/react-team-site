@@ -37,7 +37,7 @@ const BreadCrumbs = ({ pathname }) => {
     };
     if (elements) {
         return (
-            <nav>
+            <nav className="breadcrumbs">
                 <ol className="breadcrumb flex text-slate-300">
                     {elements.map((el) => (
                         <li key={el}>{getText(el)}</li>
