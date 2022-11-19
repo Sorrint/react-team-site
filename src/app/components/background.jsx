@@ -12,7 +12,11 @@ const Background = ({ children }) => {
                     <li></li>
                     <li></li>
                     <li>может</li>
-                    <li role="button" onClick={onSubmit}>
+                    <li
+                        role="button"
+                        onClick={onSubmit}
+                        className="button__hidden"
+                    >
                         *
                     </li>
                     <li>быть</li>

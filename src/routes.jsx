@@ -1,4 +1,4 @@
-import ParticipantPage from "./app/pages/participantPage/participantPage";
+import ParticipantPage from "./app/pages/participantPage";
 import FavouritePage from "./app/pages/favourites/favouritePage";
 import MainPage from "./app/pages/mainPage/mainPage";
 import { Navigate } from "react-router-dom";
@@ -14,7 +14,7 @@ const routes = () => [
         element: <FavouritePage />
     },
     {
-        path: "participant_page",
+        path: "participant_page/:userId",
         element: <ParticipantPage />
     },
     {

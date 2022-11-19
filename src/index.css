@@ -159,6 +159,10 @@ code {
     animation-duration: 11s;
 }
 
+.button-hidden {
+    z-index: 100;
+}
+
 @keyframes animate {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -173,6 +177,34 @@ code {
     }
 }
 
+.btn {
+    @apply py-1.5 px-6 border-2 text-white flex items-center  cursor-pointer;
+}
+
+.btn-rounded {
+    @apply rounded-lg;
+}
+
+.btn-primary {
+    @apply border-blue-600 hover:bg-blue-500 duration-300;
+}
+
+.btn-pink {
+    @apply border-pink-600 hover:bg-pink-600 duration-300;
+    
+}
+
+.btn-secondary {
+    @apply border-rose-600 hover:bg-rose-600 duration-300;
+}
+
+.btn-orange {
+    @apply border-orange-600 hover:bg-orange-600 duration-300;
+}
+
+.btn-black {
+    @apply border-black hover:bg-black duration-300;
+}
 .content-div {
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,10 +1,12 @@
 [
     {
+        "_id": "lebedev_anton",
         "name": "Антон",
         "surname": "Лебедев",
         "age": 36,
         "photo": "image",
         "about": "Frontend developer из Иркутска.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
         "technologies": {
             "html": 27,
             "css": 63,
@@ -12,6 +14,23 @@
             "React": 68,
             "Express": 15,
             "NodeJS": 10
+        }
+    },
+    {
+        "_id": "zabava_dmitriy",
+        "name": "Дмитрий",
+        "surname": "Забава",
+        "age": 44,
+        "photo": "https://avatars.githubusercontent.com/u/102691652?v=4",
+        "about": "Junior Frontend developer из Санкт-Петербурга.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "technologies": {
+            "html": 40,
+            "css": 35,
+            "JS": 54,
+            "React": 67,
+            "Express": 14,
+            "NodeJS": 9
         }
     }
 ]

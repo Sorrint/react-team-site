@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Navigate } from "react-router-dom";
-const BreadCrubms = ({ pathname }) => {
+const BreadCrumbs = ({ pathname }) => {
     const handleClick = () => {
         console.log("click");
         return <Navigate to="/" />;
@@ -23,6 +23,7 @@ const BreadCrubms = ({ pathname }) => {
     const isMainPage = pathname === "/";
     const mainClasses = "breadcrumb-item" + (isMainPage ? " active" : "");
     const getText = (pathname) => {
+        console.log(pathname);
         const route = routes.find((item) => item.path === pathname);
         return route.name;
     };
@@ -45,9 +46,9 @@ const BreadCrubms = ({ pathname }) => {
     );
 };
 
-BreadCrubms.propTypes = {
+BreadCrumbs.propTypes = {
     pathname: PropTypes.string.isRequired,
     onGoMain: PropTypes.func
 };
 
-export default BreadCrubms;
+export default BreadCrumbs;
