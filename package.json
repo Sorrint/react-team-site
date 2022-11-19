@@ -22,7 +22,8 @@
         "eject": "react-scripts eject",
         "format": "npx prettier --write .",
         "build:css": "tailwind build src/App.css -o src/index.css",
-        "watch:css": "chokidar 'src/App.css' -c 'npm run build:css'"
+        "watch:css": "chokidar 'src/App.css' -c 'npm run build:css'",
+        "dev": "react-scripts start"
     },
     "eslintConfig": {
         "extends": [
