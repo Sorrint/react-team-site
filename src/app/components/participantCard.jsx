@@ -1,12 +1,3 @@
-// ### Отображает
-
-// - Имя, фамилия
-// - Возраст
-// - Фотография (если нет фотографии, то любимая картинка)
-// - О себе (2-3 предложения)
-// - Кнопка "открыть"
-// - Кнопка "добавить в избранное"
-
 import React from "react";
 import Button from "./button";
 import PropTypes from "prop-types";
@@ -14,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
-        return null;
+        return localStorage.setItem("userId", JSON.stringify(userId));
     };
     return (
         <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg">
