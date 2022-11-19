@@ -11,7 +11,7 @@ const ParticipantPage = () => {
     useEffect(() => {
         console.log("participant", participant);
     }, [participant]);
-
+    if (!participant) return "...Loader";
     return (
         <div className="participant">
             <div className="container participant__container">
@@ -20,8 +20,8 @@ const ParticipantPage = () => {
                     <h2 className="participant__subtitle">
                         {participant.name} {participant.surname}
                     </h2>
+                    <p>Мне {participant.age}</p>
                     <p className="participant__description">
-                        <p>Мне {participant.age}</p>
                         {participant.description}
                     </p>
 
