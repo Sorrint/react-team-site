@@ -37,7 +37,7 @@ const BreadCrumbs = ({ pathname }) => {
 
         console.log(index);
         if (!route) return "";
-        return index + 1 === length ? route.name : `${route.name} /`;
+        return index + 1 === length ? route.name : route.name + "/";
     };
     if (elements) {
         return (
