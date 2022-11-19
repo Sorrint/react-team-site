@@ -21,6 +21,7 @@ const ParticipantPage = () => {
                         {participant.name} {participant.surname}
                     </h2>
                     <p className="participant__description">
+                        <p>Мне {participant.age}</p>
                         {participant.description}
                     </p>
 
