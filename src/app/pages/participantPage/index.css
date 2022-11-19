@@ -1,5 +1,6 @@
 .participant {
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +19,7 @@
     grid-gap: 20px;
 }
 
-.participant__about {
+/* .participant__about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,7 +40,7 @@
 .participant__subtitle {
     font-size: 32px;
     font-weight: 400;
-}
+} */
 
 .participant__links {
     display: flex;
@@ -62,7 +63,7 @@
     overflow: hidden;
     border: 10px solid #fff;
 
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
 
     animation: ava-animate 5s infinite alternate;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);

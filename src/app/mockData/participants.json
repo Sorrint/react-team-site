@@ -3,8 +3,8 @@
         "_id": "lebedev_anton",
         "name": "Антон",
         "surname": "Лебедев",
-        "age": "36",
-        "photo": "image",
+        "age": 36,
+        "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
         "technologies": {

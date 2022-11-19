@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+
+import { Link, useLocation, useParams } from "react-router-dom";
+import AboutParticipant from "../../components/ui/aboutParticipant";
 import API from "../../api";
+import BreadCrumbs from "../../components/breadCrumbs";
+import Navbar from "../../components/navBar";
 
 const ParticipantPage = () => {
     const { userId } = useParams();
+    const location = useLocation();
     const [participant, setParticipant] = useState();
     useEffect(() => {
         API.users.getById(userId).then((data) => setParticipant(data));
@@ -12,22 +17,15 @@ const ParticipantPage = () => {
     useEffect(() => {
         console.log("participant", participant);
     }, [participant]);
-
-    if (participant) {
-        return (
+    if (!participant) return "...Loader";
+    return (
+        <>
+            <Navbar />
+            <BreadCrumbs pathname={location.pathname} />
             <div className="participant">
                 <div className="container participant__container">
                     <div className="participant__about">
-                        <h1 className="participant__title">
-                            {participant.about}
-                        </h1>
-                        <h2 className="participant__subtitle">
-                            {participant.name} {participant.surname}
-                        </h2>
-                        <p className="participant__description">
-                            <p>Мне {participant.age}</p>
-                            {participant.description}
-                        </p>
+                        <AboutParticipant {...participant} />
 
                         <div className="participant__links">
                             <Link
@@ -49,8 +47,8 @@ const ParticipantPage = () => {
                     </div>
                 </div>
             </div>
-        );
-    }
+        </>
+    );
 };
 
 export default ParticipantPage;

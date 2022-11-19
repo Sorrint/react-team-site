@@ -2,10 +2,7 @@ import React from "react";
 
 const Team = () => {
     return (
-        <div
-            name="about"
-            className="w-full h-screen bg-[#0a192f] text-gray-300"
-        >
+        <div name="team" className="w-full h-screen bg-[#0a192f] text-gray-300">
             <div className="flex flex-col justify-center items-center w-full h-full">
                 <div className="sm:text-right py-8 px-4">
                     <p className="text-4xl font-bold inline border-b-4 border-yellow-400">

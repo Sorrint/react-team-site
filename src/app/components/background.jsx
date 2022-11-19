@@ -25,8 +25,8 @@ const Background = ({ children }) => {
                     <li></li>
                     <li>реклама</li>
                 </ul>
+                {children}
             </div>
-            {children}
         </>
     );
 };

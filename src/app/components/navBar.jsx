@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
+    const { pathname } = useLocation();
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+        <div className="relative w-full h-[80px] flex justify-between items-center px-4 text-gray-300">
             <div>
                 <h1 className="text-xl">
                     DREAM [ <span className="text-[#637ccd]">WEBDEV</span> ]{" "}
@@ -20,24 +22,36 @@ const Navbar = () => {
             {/* menu */}
             <ul className="hidden md:flex">
                 <li>
-                    <Link to="/" smooth={true} duration={500}>
-                        Главная
-                    </Link>
+                    {pathname === "/" ? (
+                        <Link to="hero" smooth="true" duration={500}>
+                            Главная
+                        </Link>
+                    ) : (
+                        <NavLink to="/" smooth="true" duration={500}>
+                            Главная
+                        </NavLink>
+                    )}
                 </li>
                 <li>
-                    <Link to="favorite" smooth={true} duration={500}>
-                        Наша команда
-                    </Link>
+                    {pathname === "/" ? (
+                        <Link to="team" smooth="true" duration={500}>
+                            Наша команда
+                        </Link>
+                    ) : (
+                        <NavLink to="/" smooth="true" duration={500}>
+                            Наша команда
+                        </NavLink>
+                    )}
                 </li>
                 <li>
-                    <Link to="portfolio" smooth={true} duration={500}>
+                    <NavLink to="portfolio" smooth="true" duration={500}>
                         Портфолио
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500}>
+                    <NavLink to="contacts" smooth="true" duration={500}>
                         Контакты
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
@@ -55,48 +69,60 @@ const Navbar = () => {
                 }
             >
                 <li className="py-6 text-4xl">
-                    <Link
-                        onClick={handleClick}
-                        to="/"
-                        smooth={true}
-                        duration={500}
-                    >
-                        Главная
-                    </Link>
+                    {pathname === "/" ? (
+                        <Link
+                            onClick={handleClick}
+                            to="hero"
+                            smooth="true"
+                            duration={500}
+                        >
+                            Главная
+                        </Link>
+                    ) : (
+                        <NavLink to="/" smooth="true" duration={500}>
+                            Главная
+                        </NavLink>
+                    )}
                 </li>
                 <li className="py-6 text-4xl">
                     {" "}
-                    <Link
-                        onClick={handleClick}
-                        to="favorite"
-                        smooth={true}
-                        duration={500}
-                    >
-                        Наша команда
-                    </Link>
+                    {pathname === "/" ? (
+                        <Link
+                            onClick={handleClick}
+                            to="team"
+                            smooth="true"
+                            duration={500}
+                        >
+                            Наша команда
+                        </Link>
+                    ) : (
+                        <NavLink to="/" smooth="true" duration={500}>
+                            Наша команда
+                        </NavLink>
+                    )}
                 </li>
                 <li className="py-6 text-4xl">
                     {" "}
-                    <Link
+                    <NavLink
                         onClick={handleClick}
                         to="portfolio"
-                        smooth={true}
+                        smooth="true"
                         duration={500}
                     >
                         Портфолио
-                    </Link>
+                    </NavLink>
                 </li>
 
                 <li className="py-6 text-4xl">
                     {" "}
-                    <Link
+                    <NavLink
                         onClick={handleClick}
-                        to="contact"
-                        smooth={true}
+                        to="contacts"
+                        smooth="true"
                         duration={500}
                     >
                         Контакты
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
