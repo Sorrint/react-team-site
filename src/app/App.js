@@ -1,26 +1,16 @@
+import { useRoutes } from "react-router-dom";
+import routes from "../routes";
 import React from "react";
-import { Navigate, useRoutes } from "react-router-dom";
-import FavouritePage from "./pages/favourites/favouritePage";
-import MainPage from "./pages/mainPage/mainPage";
-import ParticipantPage from "./pages/participantPage/participantPage";
+import Background from "./components/background";
 
 function App() {
-    const routes = useRoutes([
-        {
-            path: "/",
-            element: <MainPage />
-        },
-        {
-            path: "favorite",
-            element: <FavouritePage />
-        },
-        {
-            path: "participant_page",
-            element: <ParticipantPage />
-        },
-        { path: "*", element: <Navigate to="/" /> }
-    ]);
-    return { routes };
+    // comment
+    const elements = useRoutes(routes());
+    return (
+        <>
+            <Background>{elements}</Background>
+        </>
+    );
 }
 
 export default App;
