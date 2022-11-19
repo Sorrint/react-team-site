@@ -7,9 +7,8 @@ const FavouritePage = () => {
     const location = useLocation();
     return (
         <>
-            <BreadCrubms pathname={location.pathname} />
             <Navbar />
-            <h1>Favourite Page</h1>
+            <BreadCrubms pathname={location.pathname} />
         </>
     );
 };
