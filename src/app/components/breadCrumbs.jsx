@@ -37,7 +37,7 @@ const BreadCrumbs = ({ pathname }) => {
 
         console.log(index);
         if (!route) return "";
-        return index + 1 === length ? route.name : route.name + "/";
+        return index + 1 === length ? route.name : <>{route.name}</>;
     };
     if (elements) {
         return (
@@ -45,9 +45,20 @@ const BreadCrumbs = ({ pathname }) => {
                 <ol className="breadcrumb flex text-slate-300">
                     {pathname === "/"
                         ? "Главная"
-                        : elements.map((el) => (
-                              <li key={el}>{getText(el, elements.length)}</li>
-                          ))}
+                        : elements.map((el, index) => {
+                              return index + 1 === elements.length ? (
+                                  <li key={el}>
+                                      {getText(el, elements.length)}
+                                  </li>
+                              ) : (
+                                  <>
+                                      <li key={el}>
+                                          {getText(el, elements.length)}
+                                      </li>
+                                      <li>/</li>
+                                  </>
+                              );
+                          })}
                 </ol>
             </nav>
         );
