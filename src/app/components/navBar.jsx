@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+        <div className="relative w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
             <div>
                 <h1 className="text-xl">
                     DREAM [ <span className="text-[#637ccd]">WEBDEV</span> ]{" "}

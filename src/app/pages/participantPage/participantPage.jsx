@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 
-
 import API from "../../api";
 import BreadCrumbs from "../../components/breadCrumbs";
 import Navbar from "../../components/navBar";
@@ -17,8 +16,9 @@ const ParticipantPage = () => {
     if (participant) {
         return (
             <>
-                <BreadCrumbs pathname={location.pathname} />
                 <Navbar />
+                <BreadCrumbs pathname={location.pathname} />
+
                 <div className="participant">
                     <div className="container participant__container">
                         <div className="participant__about">
