@@ -32,5 +32,22 @@
             "Express": 14,
             "NodeJS": 9
         }
+    },
+    {
+        "_id": "eugene_gavrilyuk",
+        "name": "Евгений",
+        "surname": "Гаврилюк",
+        "age": 41,
+        "photo": "image",
+        "about": "Frontend developer из Киева",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "technologies": {
+            "html": 45,
+            "css": 67,
+            "JS": 41,
+            "React": 60,
+            "Express": 14,
+            "NodeJS": 9
+        }
     }
 ]
