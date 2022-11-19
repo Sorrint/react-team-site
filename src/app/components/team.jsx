@@ -7,12 +7,13 @@ const Team = () => {
     useEffect(() => {
         API.users.fetchAll().then((data) => setUsers(data));
     }, []);
+    console.log(users);
 
     return (
         users && (
             <div
                 name="team"
-                className="w-full h-screen bg-[#0a192f] text-gray-300"
+                className="w-full h-full bg-[#0a192f] text-gray-300 py-11"
             >
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     <div className="sm:text-right py-8 px-4">
@@ -30,7 +31,7 @@ const Team = () => {
                             проектов.{" "}
                         </p>
                     </div>
-                    <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+                    <div className="max-w-[1000px] grid place-content-center sm:grid-cols-2 gap-y-16 gap-x-8 px-4 py-10">
                         {users.map((user) => {
                             return (
                                 <ParticipantCard key={user._id} user={user} />

@@ -3,7 +3,7 @@ import Button from "./button";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
+const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
         return localStorage.setItem("userId", JSON.stringify(userId));
     };
@@ -12,7 +12,7 @@ const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
             <div className="border mx-2 rounded-lg bg-indigo-300">
                 <img
                     className="object-cover h-72 w-72 rounded-lg"
-                    src={image}
+                    src={photo}
                     alt="participant photo"
                 />
             </div>
@@ -41,7 +41,7 @@ const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
     );
 };
 ParticipantCard.propTypes = {
-    image: PropTypes.string,
+    photo: PropTypes.string,
     name: PropTypes.string,
     surname: PropTypes.string,
     age: PropTypes.string,
