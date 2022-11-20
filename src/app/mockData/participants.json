@@ -9,12 +9,12 @@
         "about": "Frontend developer из Иркутска.",
         "description": "Обожаю получать новые знания и применять их в своих проектах. Разрабатываю приложения с декабря 2021 года. Работаю со стеком MERN.",
         "technologies": [
-            { "title": "html", "value": 27 },
-            { "title": "css", "value": 63 },
-            { "title": "JS", "value": 44 },
-            { "title": "React", "value": 68 },
-            { "title": "Express", "value": 15 },
-            { "title": "NodeJS", "value": 10 }
+            { "title": "html", "value": 27, "color": "#d9051b" },
+            { "title": "css", "value": 63, "color": "blue" },
+            { "title": "JS", "value": 44, "color": "#ffdb03" },
+            { "title": "React", "value": 68, "color": "#5059ff" },
+            { "title": "Express", "value": 15, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 10, "color": "#5da269" }
         ],
 
         "contacts": [
@@ -38,12 +38,12 @@
             "Telegram": "https://t.me/DmitriyZabava"
         },
         "technologies": [
-            { "title": "html", "value": 40 },
-            { "title": "css", "value": 35 },
-            { "title": "JS", "value": 54 },
-            { "title": "React", "value": 67 },
-            { "title": "Express", "value": 14 },
-            { "title": "NodeJS", "value": 9 }
+            { "title": "html", "value": 40, "color": "#d9051b" },
+            { "title": "css", "value": 35, "color": "blue" },
+            { "title": "JS", "value": 54, "color": "#ffdb03" },
+            { "title": "React", "value": 67, "color": "#5059ff" },
+            { "title": "Express", "value": 14, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 9, "color": "#5da269" }
         ],
         "contacts": [
             { "name": "vkonakte", "path": "https://vk.com/id23930050" },
@@ -62,12 +62,12 @@
         "about": "Frontend developer из Киева",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
         "technologies": [
-            { "title": "html", "value": 45 },
-            { "title": "css", "value": 67 },
-            { "title": "JS", "value": 41 },
-            { "title": "React", "value": 60 },
-            { "title": "Express", "value": 14 },
-            { "title": "NodeJS", "value": 9 }
+            { "title": "html", "value": 45, "color": "#d9051b" },
+            { "title": "css", "value": 67, "color": "blue" },
+            { "title": "JS", "value": 41, "color": "#ffdb03" },
+            { "title": "React", "value": 60, "color": "#5059ff" },
+            { "title": "Express", "value": 14, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 9, "color": "#5da269" }
         ]
     },
     {
@@ -80,18 +80,17 @@
         "about": "Junior Frontend developer из Нягани.",
         "description": "Люблю заниматься разработкой, улучшать имеющиеся навыки и приобретать новые, изучая новые технологи, подходы, практики.",
         "technologies": [
-            { "title": "html", "value": 60 },
-            { "title": "css", "value": 70 },
-            { "title": "JS", "value": 60 },
-            { "title": "React", "value": 80 },
-            { "title": "Express", "value": 80 },
-            { "title": "NodeJS", "value": 70 }
+            { "title": "html", "value": 60, "color": "#d9051b" },
+            { "title": "css", "value": 70, "color": "blue" },
+            { "title": "JS", "value": 60, "color": "#ffdb03" },
+            { "title": "React", "value": 80, "color": "#5059ff" },
+            { "title": "Express", "value": 80, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 70, "color": "#5da269" }
         ],
         "contacts": [
             { "name": "gmail", "path": "shabalin.yakov@gmail.com" },
             { "name": "github", "path": "https://github.com/shabalinyakov" },
             { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
         ]
-
     }
 ]

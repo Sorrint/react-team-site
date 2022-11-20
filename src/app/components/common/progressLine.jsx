@@ -6,17 +6,18 @@ const ProgressLine = ({ value, name, color }) => {
     useEffect(() => {
         progressRef.current.style.width = `${(value / 100) * 150}px`;
         progressRef.current.style.backgroundColor = color;
+        progressRef.current.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
     }, [value]);
     return (
         <>
             <div className="wrapper-progress">
-                <span className=" block"> {name}</span>
                 <div className={`container-line__full`}>
                     <div
                         className={`container-line__value`}
                         ref={progressRef}
                     ></div>
                 </div>
+                <span className=" block"> {name}</span>
             </div>
         </>
     );

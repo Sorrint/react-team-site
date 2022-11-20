@@ -6,17 +6,17 @@ const ProgressCircle = ({ value, name, color = "white" }) => {
     useEffect(() => {
         progressRef.current.style.width = `${(value / 100) * 15}rem`;
         progressRef.current.style.backgroundColor = color;
+        progressRef.current.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
     }, [value]);
     return (
         <>
             <div className="wrapper-progress">
                 <div className={`container-circle__full`}>
-                    {name}
-
                     <div
                         className={`container-circle__value`}
                         ref={progressRef}
                     ></div>
+                    {name}
                 </div>
             </div>
         </>
