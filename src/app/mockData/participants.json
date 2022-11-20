@@ -21,7 +21,7 @@
             { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
             { "name": "gmail", "path": "sorrint@gmail.com" },
             { "name": "github", "path": "https://github.com/Sorrint" },
-            { "name": "telegram", "path": "@Sorrint" }
+            { "name": "telegram", "path": "https://t.me/Sorrint" }
         ]
     },
     {
@@ -61,7 +61,7 @@
         "contacts": [
             { "name": "gmail", "path": "egavriluk@gmail.com" },
             { "name": "github", "path": "https://github.com/Eugene015" },
-            { "name": "telegram", "path": "@EugeneLand" }
+            { "name": "telegram", "path": "https://t.me/EugeneLand" }
         ],
         "technologies": [
             { "title": "html", "value": 45, "color": "#d9051b" },
