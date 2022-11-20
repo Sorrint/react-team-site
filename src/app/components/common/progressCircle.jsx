@@ -9,10 +9,9 @@ const ProgressCircle = ({ value, name, color = "white" }) => {
     }, [value]);
     return (
         <>
-            <div className="wrapper-progress">
-                <div className={`container-circle__full`}>
+            <div className="wrapper-progress text-lg">
+                <div className="container-circle__full">
                     {name}
-
                     <div
                         className={`container-circle__value`}
                         ref={progressRef}

@@ -10,7 +10,7 @@ const ProgressLine = ({ value, name, color }) => {
     return (
         <>
             <div className="wrapper-progress">
-                {name}
+                <span className=" block"> {name}</span>
                 <div className={`container-line__full`}>
                     <div
                         className={`container-line__value`}

@@ -18,7 +18,14 @@ const FavouritePage = () => {
     useEffect(() => {
         participantService
             .getFavourites(favUsersIds)
-            .then((data) => setFavUsers(data));
+            .then((data) => {
+                if (data.length !== 0) {
+                    return setFavUsers(data);
+                } else {
+                    return setFavUsers(["noUsers"]);
+                }
+            })
+            .catch((error) => console.log(error));
     }, [favUsersChange]);
 
     return (
@@ -28,7 +35,11 @@ const FavouritePage = () => {
                 <Navbar />
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     {favUsers ? (
-                        <ParticipantList users={favUsers} />
+                        favUsers[0] === "noUsers" ? (
+                            "Нет пользователей"
+                        ) : (
+                            <ParticipantList users={favUsers} />
+                        )
                     ) : (
                         <div className="flex flex-col justify-center items-center w-full h-full">
                             <ThreeDots
