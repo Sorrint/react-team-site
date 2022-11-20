@@ -20,6 +20,7 @@ const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     }, []);
 
     const addToFavourite = () => {
+
         setFavouriteUser(userId);
         setFavourite(true);
     };
@@ -27,6 +28,7 @@ const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     const removeFromFavourite = () => {
         removeFavouriteUser(userId);
         setFavourite(false);
+
     };
     return (
         <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg pb-5">

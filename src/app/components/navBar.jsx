@@ -44,8 +44,8 @@ const Navbar = () => {
                     )}
                 </li>
                 <li>
-                    <NavLink to="portfolio" smooth="true" duration={500}>
-                        Портфолио
+                    <NavLink to="favourite" smooth="true" duration={500}>
+                        Избранное
                     </NavLink>
                 </li>
                 <li>
@@ -105,11 +105,11 @@ const Navbar = () => {
                     {" "}
                     <NavLink
                         onClick={handleClick}
-                        to="portfolio"
+                        to="favourite"
                         smooth="true"
                         duration={500}
                     >
-                        Портфолио
+                        Избранное
                     </NavLink>
                 </li>
 

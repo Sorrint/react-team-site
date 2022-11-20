@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
-const BreadCrumbs = ({ pathname }) => {
+const BreadCrumbs = ({ pathname, userId, name, surname }) => {
     const [elements, setElements] = useState();
-
     useEffect(() => {
         setElements(pathname.split("/"));
     }, []);
@@ -20,41 +20,46 @@ const BreadCrumbs = ({ pathname }) => {
         {
             path: "favourite",
             name: "Избранное"
-        },
-        {
-            path: "lebedev_anton",
-            name: "Лебедев Антон"
-        },
-        {
-            path: "zabava_dmitriy",
-            name: "Забава Дмитрий"
         }
     ];
 
     const getText = (element, length) => {
         const route = routes.find((item) => item.path === element);
         const index = elements.findIndex((item) => item === element);
-        if (!route) return "";
-        return index + 1 === length ? route.name : <>{route.name}</>;
+
+        if (!route && userId === element) {
+            return `${surname} ${name}`;
+        }
+        return index === 0 ? (
+            <NavLink to="/" smooth="true" duration={500}>
+                {route.name}
+            </NavLink>
+        ) : (
+            <>{route.name}</>
+        );
     };
     if (elements) {
         return (
-            <nav className="breadcrumbs px-2 h-6">
+            <nav className="breadcrumbs h-6">
                 <ol className="breadcrumb flex text-slate-300">
                     {pathname === "/"
                         ? "Главная"
                         : elements.map((el, index) => {
                               return index + 1 === elements.length ? (
                                   <li key={el}>
-                                      {getText(el, elements.length)}
+                                      <div className="breadcrumb__text">
+                                          {getText(el, elements.length)}
+                                      </div>
                                   </li>
                               ) : (
-                                  <>
-                                      <li key={el}>
+                                  <li key={el}>
+                                      <div className="breadcrumb__text">
                                           {getText(el, elements.length)}
-                                      </li>
-                                      <li>/</li>
-                                  </>
+                                      </div>
+                                      <div className="breadcrumb__divider">
+                                          /
+                                      </div>
+                                  </li>
                               );
                           })}
                 </ol>
@@ -65,7 +70,9 @@ const BreadCrumbs = ({ pathname }) => {
 
 BreadCrumbs.propTypes = {
     pathname: PropTypes.string.isRequired,
-    onGoMain: PropTypes.func
+    userId: PropTypes.string,
+    name: PropTypes.string,
+    surname: PropTypes.string
 };
 
 export default BreadCrumbs;
