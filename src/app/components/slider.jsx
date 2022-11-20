@@ -84,8 +84,8 @@ const Slider = function ({
     };
     return (
         <div
-            style={{ width, height }}
-            className="slider overflow-hidden relative ml-1 mt-5"
+            style={{ height }}
+            className="slider overflow-hidden relative mt-1 mt-5"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
         >
