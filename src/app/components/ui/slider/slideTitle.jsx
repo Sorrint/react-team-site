@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const SlideTitle = ({ title }) => {
-    return <div className="text-center mt-2">{title}</div>;
+    return <div className="text-center mt-2 rounded-md">{title}</div>;
 };
 
 SlideTitle.propTypes = {

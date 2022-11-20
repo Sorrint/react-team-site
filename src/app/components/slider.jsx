@@ -15,12 +15,9 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
 
     useEffect(() => {
         const loadData = async () => {
-            const images = await fetch(
-                "https://jsonplaceholder.typicode.com/albums/1/photos"
-            )
+            await fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
                 .then((response) => response.json())
                 .then((json) => setItems(json));
-            console.log("images", images);
         };
         loadData();
     }, []);
@@ -65,7 +62,6 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
 
         setTouchPosition(null);
     };
-    console.log("items", items);
     useEffect(() => {
         if (!autoPlay) return;
 
@@ -81,7 +77,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
     return (
         <div
             style={{ width, height }}
-            className="slider overflow-hidden relative"
+            className="slider overflow-hidden relative ml-1 mt-5"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
         >

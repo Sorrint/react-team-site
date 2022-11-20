@@ -22,12 +22,17 @@ const ParticipantPage = () => {
                 <div className="wrapper_100vh">
                     <BreadCrumbs pathname={location.pathname} />
                     <Navbar />
-                    <div className="participant">
+                    <div className="participant pl-10">
                         <div className="container participant__container">
                             <div className="participant__about">
                                 <AboutParticipant {...participant} />
                                 <Badge {...participant} />
-                                <Slider />
+                                <Slider
+                                    autoPlay={true}
+                                    autoPlayTime={5000}
+                                    width={"60%"}
+                                    height={"50%"}
+                                />
                                 <div className="participant__links">
                                     <Link
                                         className="participant__link"
