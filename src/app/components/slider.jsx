@@ -8,21 +8,19 @@ import SlidesList from "./ui/slider/slidesList";
 
 export const SliderContext = createContext();
 
-const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
+const Slider = function ({
+    width,
+    height,
+    autoPlay,
+    autoPlayTime,
+    technologies
+}) {
     const [items, setItems] = useState([]);
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null);
 
     useEffect(() => {
-        const loadData = async () => {
-            const images = await fetch(
-                "https://jsonplaceholder.typicode.com/albums/1/photos"
-            )
-                .then((response) => response.json())
-                .then((json) => setItems(json));
-            console.log("images", images);
-        };
-        loadData();
+        setItems(Object.entries(technologies));
     }, []);
 
     const changeSlide = (direction = 1) => {
@@ -80,7 +78,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
     return (
         <div
             style={{ width, height }}
-            className="slider overflow-hidden relative"
+            className="slider overflow-hidden relative ml-1 mt-5"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
         >
@@ -90,7 +88,8 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
                     changeSlide,
                     slidesCount: items.length,
                     slideNumber: slide,
-                    items
+                    items,
+                    technologies
                 }}
             >
                 <Arrows />
@@ -105,7 +104,8 @@ Slider.propTypes = {
     autoPlay: PropTypes.bool,
     autoPlayTime: PropTypes.number,
     width: PropTypes.string,
-    height: PropTypes.string
+    height: PropTypes.string,
+    technologies: PropTypes.object
 };
 
 Slider.defaultProps = {

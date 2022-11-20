@@ -7,7 +7,9 @@ const Dot = ({ number }) => {
 
     return (
         <div
-            className={`dot ${slideNumber === number ? "selected" : ""}`}
+            className={`dot ${
+                slideNumber === number ? "selected" : ""
+            } text-white`}
             onClick={() => goToSlide(number)}
         />
     );

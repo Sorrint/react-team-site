@@ -6,6 +6,7 @@
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
+    /* z-index: 100; */
 }
 
 .container {
@@ -39,15 +40,26 @@
     display: flex;
     flex-direction: column;
     max-width: 480px;
-    max-height: 480px;
+    max-height: 560px;
     justify-self: center;
+    align-items: center;
 }
 .participant__box {
+    max-height: 480px;
     overflow: hidden;
     border: 10px solid #fff;
     color: white;
     animation: ava-animate 5s infinite alternate;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contacts__icons {
+    z-index: 500;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .participant__box-img {

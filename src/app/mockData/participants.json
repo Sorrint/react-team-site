@@ -32,6 +32,10 @@
         "photo": "https://avatars.githubusercontent.com/u/102691652?v=4",
         "about": "Junior Frontend developer из Санкт-Петербурга.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "socialNetworks": {
+            "GitHub": "https://github.com/DmitriyZabava",
+            "Telegram": "https://t.me/DmitriyZabava"
+        },
         "technologies": {
             "html": 40,
             "css": 35,
@@ -46,6 +50,7 @@
         "name": "Евгений",
         "surname": "Гаврилюк",
         "age": 41,
+        "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/101366301?v=4",
         "about": "Frontend developer из Киева",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
@@ -56,20 +61,22 @@
             "React": 60,
             "Express": 14,
             "NodeJS": 9
-        }
+        },
+        "contacts": [
+            { "name": "gmail", "path": "egavriluk@gmail.com" },
+            { "name": "github", "path": "https://github.com/Eugene015" },
+            { "name": "telegram", "path": "@EugeneLand" }
+        ]
     },
     {
         "_id": "shabalin_yakov",
         "name": "Яков",
         "surname": "Шабалин",
         "age": 31,
+        "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
         "about": "Junior Frontend developer из Нягани.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
-        "socialNetworks": {
-            "GitHub": "https://github.com/shabalinyakov",
-            "Telegram": "https://t.me/shabalin_yakov"
-        },
+        "description": "Люблю заниматься разработкой, улучшать имеющиеся навыки и приобретать новые, изучая новые технологи, подходы, практики.",
         "technologies": {
             "html": 60,
             "css": 70,
@@ -77,6 +84,11 @@
             "React": 80,
             "Express": 80,
             "NodeJS": 70
-        }
+        },
+        "contacts": [
+            { "name": "gmail", "path": "shabalin.yakov@gmail.com" },
+            { "name": "github", "path": "https://github.com/shabalinyakov" },
+            { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
+        ]
     }
 ]

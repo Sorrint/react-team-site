@@ -23,7 +23,7 @@ const ProgressLine = ({ value, name, color }) => {
 };
 
 ProgressLine.propTypes = {
-    value: PropTypes.string,
+    value: PropTypes.number,
     name: PropTypes.string,
     color: PropTypes.string,
     type: PropTypes.string

@@ -5,6 +5,7 @@ import Navbar from "../../components/navBar";
 import participantService from "../../services/participants.service";
 import Team from "../../components/team";
 import { ThreeDots } from "react-loader-spinner";
+import SocialIcon from "../../components/socialIcon";
 
 const MainPage = () => {
     const [users, setUsers] = useState();
@@ -15,6 +16,7 @@ const MainPage = () => {
         <>
             <BreadCrumbs pathname={location.pathname} />
             <Navbar />
+            <SocialIcon />
             <Hero />
             {users ? (
                 <Team users={users} />

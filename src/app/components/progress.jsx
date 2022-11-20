@@ -40,7 +40,7 @@ const Progress = ({ type = "line", value, name, color = "orange" }) => {
 };
 
 Progress.propTypes = {
-    value: PropTypes.string,
+    value: PropTypes.number,
     name: PropTypes.string,
     color: PropTypes.string,
     type: PropTypes.string
