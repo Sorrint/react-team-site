@@ -41,7 +41,7 @@ const BreadCrumbs = ({ pathname }) => {
     };
     if (elements) {
         return (
-            <nav className="breadcrumbs px-2 h-6">
+            <nav className="breadcrumbs pb-8 h-6">
                 <ol className="breadcrumb flex text-slate-300">
                     {pathname === "/"
                         ? "Главная"
