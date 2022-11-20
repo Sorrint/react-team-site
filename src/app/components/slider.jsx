@@ -2,7 +2,7 @@ import React, { useEffect, useState, createContext } from "react";
 import PropTypes from "prop-types";
 
 import Arrows from "./ui/slider/arrows";
-import Dots from "./ui/slider/dots";
+// import Dots from "./ui/slider/dots";
 
 import SlidesList from "./ui/slider/slidesList";
 
@@ -18,9 +18,10 @@ const Slider = function ({
     const [items, setItems] = useState([]);
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null);
+    const [progressType, setProgressType] = useState("circle");
 
     useEffect(() => {
-        setItems(Object.entries(technologies));
+        setItems(technologies);
     }, []);
 
     const changeSlide = (direction = 1) => {
@@ -74,7 +75,13 @@ const Slider = function ({
             clearInterval(interval);
         };
     }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
-
+    const progressHandler = () => {
+        if (progressType === "circle") {
+            setProgressType("line");
+        } else {
+            setProgressType("circle");
+        }
+    };
     return (
         <div
             style={{ width, height }}
@@ -89,12 +96,19 @@ const Slider = function ({
                     slidesCount: items.length,
                     slideNumber: slide,
                     items,
-                    technologies
+                    progressType
                 }}
             >
+                <button
+                    className=" bg-amber-300 rounded-lg"
+                    onClick={progressHandler}
+                >
+                    button
+                </button>
                 <Arrows />
                 <SlidesList />
-                <Dots />
+
+                {/* <Dots /> */}
             </SliderContext.Provider>
         </div>
     );
@@ -105,7 +119,7 @@ Slider.propTypes = {
     autoPlayTime: PropTypes.number,
     width: PropTypes.string,
     height: PropTypes.string,
-    technologies: PropTypes.object
+    technologies: PropTypes.array
 };
 
 Slider.defaultProps = {

@@ -8,14 +8,15 @@
         "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
         "description": "Обожаю получать новые знания и применять их в своих проектах. Разрабатываю приложения с декабря 2021 года. Работаю со стеком MERN.",
-        "technologies": {
-            "html": 27,
-            "css": 63,
-            "JS": 44,
-            "React": 68,
-            "Express": 15,
-            "NodeJS": 10
-        },
+        "technologies": [
+            { "title": "html", "value": 27 },
+            { "title": "css", "value": 63 },
+            { "title": "JS", "value": 44 },
+            { "title": "React", "value": 68 },
+            { "title": "Express", "value": 15 },
+            { "title": "NodeJS", "value": 10 }
+        ],
+
         "contacts": [
             { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
             { "name": "gmail", "path": "sorrint@gmail.com" },
@@ -36,14 +37,20 @@
             "GitHub": "https://github.com/DmitriyZabava",
             "Telegram": "https://t.me/DmitriyZabava"
         },
-        "technologies": {
-            "html": 40,
-            "css": 35,
-            "JS": 54,
-            "React": 67,
-            "Express": 14,
-            "NodeJS": 9
-        }
+        "technologies": [
+            { "title": "html", "value": 40 },
+            { "title": "css", "value": 35 },
+            { "title": "JS", "value": 54 },
+            { "title": "React", "value": 67 },
+            { "title": "Express", "value": 14 },
+            { "title": "NodeJS", "value": 9 }
+        ],
+        "contacts": [
+            { "name": "vkonakte", "path": "https://vk.com/id23930050" },
+            { "name": "gmail", "path": "zdw1978@gmail.com" },
+            { "name": "github", "path": "https://github.com/DmitriyZabava" },
+            { "name": "telegram", "path": "https://t.me/DmitriyZabava" }
+        ]
     },
     {
         "_id": "eugene_gavrilyuk",
@@ -54,14 +61,14 @@
         "photo": "https://avatars.githubusercontent.com/u/101366301?v=4",
         "about": "Frontend developer из Киева",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
-        "technologies": {
-            "html": 45,
-            "css": 67,
-            "JS": 41,
-            "React": 60,
-            "Express": 14,
-            "NodeJS": 9
-        }
+        "technologies": [
+            { "title": "html", "value": 45 },
+            { "title": "css", "value": 67 },
+            { "title": "JS", "value": 41 },
+            { "title": "React", "value": 60 },
+            { "title": "Express", "value": 14 },
+            { "title": "NodeJS", "value": 9 }
+        ]
     },
     {
         "_id": "shabalin_yakov",
@@ -71,18 +78,20 @@
         "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
         "about": "Junior Frontend developer из Нягани.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
-        "socialNetworks": {
-            "GitHub": "https://github.com/shabalinyakov",
-            "Telegram": "https://t.me/shabalin_yakov"
-        },
-        "technologies": {
-            "html": 60,
-            "css": 70,
-            "JS": 60,
-            "React": 80,
-            "Express": 80,
-            "NodeJS": 70
-        }
+        "description": "Люблю заниматься разработкой, улучшать имеющиеся навыки и приобретать новые, изучая новые технологи, подходы, практики.",
+        "technologies": [
+            { "title": "html", "value": 60 },
+            { "title": "css", "value": 70 },
+            { "title": "JS", "value": 60 },
+            { "title": "React", "value": 80 },
+            { "title": "Express", "value": 80 },
+            { "title": "NodeJS", "value": 70 }
+        ],
+        "contacts": [
+            { "name": "gmail", "path": "shabalin.yakov@gmail.com" },
+            { "name": "github", "path": "https://github.com/shabalinyakov" },
+            { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
+        ]
+
     }
 ]

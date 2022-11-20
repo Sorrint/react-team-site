@@ -1,19 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import Progress from "../../progress";
+import { SliderContext } from "../../slider";
 
-const SlideImage = ({ src, alt, value, title }) => {
+const SlideImage = ({ value, name }) => {
+    const { progressType } = useContext(SliderContext);
+
     return (
         <div className=" flex my-0 mx-auto w-full max-h-80 justify-center">
-            <Progress value={value} name={title} type="circle" />
+            <Progress value={value} name={name} type={progressType} />
         </div>
     );
 };
 SlideImage.propTypes = {
-    src: PropTypes.string,
-    alt: PropTypes.string,
     value: PropTypes.number,
-    title: PropTypes.string
+    name: PropTypes.string
 };
 
 export default SlideImage;
