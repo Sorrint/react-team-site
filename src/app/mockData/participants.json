@@ -31,11 +31,7 @@
         "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/102691652?v=4",
         "about": "Junior Frontend developer из Санкт-Петербурга.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
-        "socialNetworks": {
-            "GitHub": "https://github.com/DmitriyZabava",
-            "Telegram": "https://t.me/DmitriyZabava"
-        },
+        "description": "В начале 2022 года начал изучать Pyton . Самообучение шло тяжело , были мысли бросить. Но тут я познакомился с Result School  и прошел курс ",
         "technologies": [
             { "title": "html", "value": 40 },
             { "title": "css", "value": 35 },
