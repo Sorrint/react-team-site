@@ -36,10 +36,27 @@
         }
     },
     {
+        "_id": "eugene_gavrilyuk",
+        "name": "Евгений",
+        "surname": "Гаврилюк",
+        "age": 41,
+        "photo": "https://avatars.githubusercontent.com/u/101366301?v=4",
+        "about": "Frontend developer из Киева",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "technologies": {
+            "html": 45,
+            "css": 67,
+            "JS": 41,
+            "React": 60,
+            "Express": 14,
+            "NodeJS": 9
+        }
+    },
+    {
         "_id": "shabalin_yakov",
         "name": "Яков",
         "surname": "Шабалин",
-        "age": "31",
+        "age": 31,
         "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
         "about": "Junior Frontend developer из Нягани.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",

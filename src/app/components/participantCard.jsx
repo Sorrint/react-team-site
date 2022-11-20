@@ -3,20 +3,20 @@ import Button from "./button";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
+const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
         return localStorage.setItem("userId", JSON.stringify(userId));
     };
     return (
-        <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg pb-5">
             <div className="border mx-2 rounded-lg bg-indigo-300">
                 <img
                     className="object-cover h-72 w-72 rounded-lg"
-                    src={image}
+                    src={photo}
                     alt="participant photo"
                 />
             </div>
-            <div className="px-6 py-4 ml-6">
+            <div className="flex flex-col h-full px-6 py-4 ml-6">
                 <div className="font-bold text-xl mb-2">
                     {name} {surname}
                 </div>
@@ -41,10 +41,10 @@ const ParticipantCard = ({ image, name, surname, age, about, userId }) => {
     );
 };
 ParticipantCard.propTypes = {
-    image: PropTypes.string,
+    photo: PropTypes.string,
     name: PropTypes.string,
     surname: PropTypes.string,
-    age: PropTypes.string,
+    age: PropTypes.number,
     about: PropTypes.string,
     userId: PropTypes.string
 };
