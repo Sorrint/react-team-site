@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import { useLocation } from "react-router-dom";
 import BreadCrubms from "../../components/breadCrumbs";
@@ -12,14 +12,21 @@ const FavouritePage = () => {
     const location = useLocation();
 
     const favUsersIds = getFavouriteUsers();
-    // const favUsersChange = useCallback(() => {
-    //     participantService.getFavourites();
-    // });
+    const favUsersChange = useCallback(() => {
+        participantService.getFavourites();
+    });
     useEffect(() => {
         participantService
             .getFavourites(favUsersIds)
-            .then((data) => setFavUsers(data));
-    }, []);
+            .then((data) => {
+                if (data.length !== 0) {
+                    return setFavUsers(data);
+                } else {
+                    return setFavUsers(["нет пользователей"]);
+                }
+            })
+            .catch((error) => console.log(error));
+    }, [favUsersChange]);
 
     return (
         <>
