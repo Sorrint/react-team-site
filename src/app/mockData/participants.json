@@ -19,7 +19,6 @@
 
         "contacts": [
             { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
-            { "name": "gmail", "path": "sorrint@gmail.com" },
             { "name": "github", "path": "https://github.com/Sorrint" },
             { "name": "telegram", "path": "https://t.me/Sorrint" }
         ]
