@@ -76,6 +76,36 @@ code {
     bottom: -150px;
 }
 
+.green li {
+    color: rgb(4, 21, 9);
+    background: rgba(5, 207, 72, 0.7);
+    box-shadow: 0 0 2px rgb(5, 207, 72), 0 0 10px rgb(5, 207, 72);
+}
+
+.yellow li {
+    color: rgb(37, 38, 23);
+    background: rgba(187, 200, 4, 0.7);
+    box-shadow: 0 0 2px rgb(187, 200, 4), 0 0 10px rgb(187, 200, 4);
+}
+
+.blue li {
+    background: #5776b9;
+    box-shadow: 0 0 2px #5776b9, 0 0 10px #5776b9;
+}
+.red li {
+    background: #d9051b;
+    box-shadow: 0 0 2px #d9051b, 0 0 10px #d9051b;
+}
+
+.orange li {
+    background: #fc614d;
+    box-shadow: 0 0 2px #fc614d, 0 0 10px #fc614d;
+}
+
+.random li {
+    background: #8b6edc;
+    box-shadow: 0 0 2px #8b6edc, 0 0 10px #8b6edc;
+}
 .circles li:nth-child(1) {
     left: 25%;
     width: 80px;

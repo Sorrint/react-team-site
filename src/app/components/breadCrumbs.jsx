@@ -50,9 +50,7 @@ const BreadCrumbs = ({ pathname }) => {
                                   </li>
                               ) : (
                                   <>
-                                      <li key={el}>
-                                          {getText(el, elements.length)}
-                                      </li>
+                                      <li>{getText(el, elements.length)}</li>
                                       <li>/</li>
                                   </>
                               );
