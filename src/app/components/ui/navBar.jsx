@@ -44,7 +44,7 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <NavLink to="favourite" smooth="true" duration={500}>
+                    <NavLink to="/favourite" smooth="true" duration={500}>
                         Избранное
                     </NavLink>
                 </li>
