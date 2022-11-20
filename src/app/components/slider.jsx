@@ -65,7 +65,6 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
 
         setTouchPosition(null);
     };
-    console.log("items", items);
     useEffect(() => {
         if (!autoPlay) return;
 

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-const BreadCrumbs = ({ pathname }) => {
+const BreadCrumbs = ({ pathname, userId, name, surname }) => {
     const [elements, setElements] = useState();
-
     useEffect(() => {
         setElements(pathname.split("/"));
     }, []);
@@ -20,21 +19,15 @@ const BreadCrumbs = ({ pathname }) => {
         {
             path: "favourite",
             name: "Избранное"
-        },
-        {
-            path: "lebedev_anton",
-            name: "Лебедев Антон"
-        },
-        {
-            path: "zabava_dmitriy",
-            name: "Забава Дмитрий"
         }
     ];
 
     const getText = (element, length) => {
         const route = routes.find((item) => item.path === element);
         const index = elements.findIndex((item) => item === element);
-        if (!route) return "";
+        if (!route && userId === element) {
+            return `${surname} ${name}`;
+        }
         return index + 1 === length ? route.name : <>{route.name}</>;
     };
     if (elements) {
@@ -69,7 +62,9 @@ const BreadCrumbs = ({ pathname }) => {
 
 BreadCrumbs.propTypes = {
     pathname: PropTypes.string.isRequired,
-    onGoMain: PropTypes.func
+    userId: PropTypes.string,
+    name: PropTypes.string,
+    surname: PropTypes.string
 };
 
 export default BreadCrumbs;
