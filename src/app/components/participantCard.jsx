@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "./button";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import { setFavouriteUser } from "../services/localStorage.service";
+import {
+    getFavouriteUsers,
+    removeFavouriteUser,
+    setFavouriteUser
+} from "../services/localStorage.service";
 
 const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
+    const [isFavourite, setFavourite] = useState(false);
+
+    useEffect(() => {
+        const favouriteArr = getFavouriteUsers();
+        if (favouriteArr) {
+            const search = favouriteArr.includes(userId, 0);
+            setFavourite(search);
+        }
+    }, []);
+
     const addToFavourite = () => {
-        return setFavouriteUser(userId);
+
+        setFavouriteUser(userId);
+        setFavourite(true);
+    };
+
+    const removeFromFavourite = () => {
+        removeFavouriteUser(userId);
+        setFavourite(false);
+
     };
     return (
         <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg pb-5">
@@ -31,11 +53,20 @@ const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
                     </Link>
                 </div>
                 <div className="px-2">
-                    <Button
-                        content="Добавить в избранное"
-                        border="rounded"
-                        onClick={addToFavourite}
-                    />
+                    {!isFavourite ? (
+                        <Button
+                            content="Добавить в избранное"
+                            border="rounded"
+                            onClick={addToFavourite}
+                        />
+                    ) : (
+                        <Button
+                            content="Удалить из избранного"
+                            color="secondary"
+                            border="rounded"
+                            onClick={removeFromFavourite}
+                        />
+                    )}
                 </div>
             </div>
         </div>

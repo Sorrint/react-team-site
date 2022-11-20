@@ -15,3 +15,9 @@ export function setFavouriteUser(userId) {
     }
     return localStorage.setItem(FAVOURITE_KEY, JSON.stringify(users));
 }
+
+export function removeFavouriteUser(userId) {
+    const users = getFavouriteUsers();
+    const arr = users.filter((u) => u !== userId);
+    return localStorage.setItem(FAVOURITE_KEY, JSON.stringify(arr));
+}
