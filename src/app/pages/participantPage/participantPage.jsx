@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import Badge from "../../components/badge";
 import BreadCrumbs from "../../components/breadCrumbs";
+import Contacts from "../../components/common/contacts";
 import Navbar from "../../components/navBar";
 import Slider from "../../components/slider";
 
@@ -43,13 +44,15 @@ const ParticipantPage = () => {
                                     </Link>
                                 </div>
                             </div>
-
-                            <div className="participant__box">
-                                <img
-                                    className="participant__box-img"
-                                    src={participant.photo}
-                                    alt="Avatar"
-                                />
+                            <div className="participant__contacts">
+                                <div className="participant__box">
+                                    <img
+                                        className="participant__box-img"
+                                        src={participant.photo}
+                                        alt="Avatar"
+                                    />
+                                </div>
+                                <Contacts contacts={participant.contacts} />
                             </div>
                         </div>
                     </div>

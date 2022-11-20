@@ -15,7 +15,13 @@
             "React": 68,
             "Express": 15,
             "NodeJS": 10
-        }
+        },
+        "contacts": [
+            { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
+            { "name": "gmail", "path": "sorrint@gmail.com" },
+            { "name": "github", "path": "https://github.com/Sorrint" },
+            { "name": "telegram", "path": "@Sorrint" }
+        ]
     },
     {
         "_id": "zabava_dmitriy",
