@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 const Badge = ({ roleInTeam }) => {
     const develop =
-        "rounded-lg p-0 md:p-1 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l";
+        "rounded-lg p-2 px-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-l";
     const teamLeed =
-        "rounded-lg p-0 md:p-1 bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l";
+        "rounded-lg py-2 px-4 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l";
     return (
         <div>
             <span className={roleInTeam === "Developer" ? develop : teamLeed}>
