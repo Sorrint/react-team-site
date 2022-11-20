@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 // import SlideTitle from "./slideTitle";
 import SlideImage from "./slideImage";
 
-const Slide = ({ title, value }) => {
+const Slide = ({ title, value, color }) => {
     return (
         <div className=" flex-[1_0_100%] relative">
-            <SlideImage value={value} name={title} />
+            <SlideImage value={value} name={title} color={color} />
             {/* <SlideTitle title={title} /> */}
         </div>
     );
@@ -14,7 +14,8 @@ const Slide = ({ title, value }) => {
 
 Slide.propTypes = {
     title: PropTypes.string,
-    value: PropTypes.number
+    value: PropTypes.number,
+    color: PropTypes.color
 };
 
 export default Slide;

@@ -4,7 +4,6 @@ import { SliderContext } from "../../slider";
 
 const SlidesList = () => {
     const { slideNumber, items } = useContext(SliderContext);
-
     if (items) {
         return (
             <>
@@ -17,6 +16,7 @@ const SlidesList = () => {
                             key={item.title}
                             value={item.value}
                             title={item.title}
+                            color={item.color}
                         />
                     ))}
                 </div>
