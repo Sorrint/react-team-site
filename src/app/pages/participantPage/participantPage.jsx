@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
-
 import { Link, useLocation, useParams } from "react-router-dom";
-import API from "../../api";
 import Badge from "../../components/badge";
 import BreadCrumbs from "../../components/breadCrumbs";
 import Navbar from "../../components/navBar";
 import Slider from "../../components/slider";
 
 import AboutParticipant from "../../components/ui/aboutParticipant";
+import participantService from "../../services/participants.service";
 
 const ParticipantPage = () => {
     const { userId } = useParams();
     const location = useLocation();
     const [participant, setParticipant] = useState();
     useEffect(() => {
-        API.users.getById(userId).then((data) => setParticipant(data));
+        participantService.getById(userId).then((data) => setParticipant(data));
     }, []);
 
     if (participant) {
