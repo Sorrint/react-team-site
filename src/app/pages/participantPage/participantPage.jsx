@@ -20,31 +20,33 @@ const ParticipantPage = () => {
     if (participant) {
         return (
             <>
-                <BreadCrumbs pathname={location.pathname} />
-                <Navbar />
-                <div className="participant">
-                    <div className="container participant__container">
-                        <div className="participant__about">
-                            <AboutParticipant {...participant} />
-                            <Badge {...participant} />
-                            <Slider />
-                            <div className="participant__links">
-                                <Link
-                                    className="participant__link"
-                                    href="#"
-                                    target="_blank"
-                                >
-                                    <i className="bx bxl-vk"></i>
-                                </Link>
+                <div className="wrapper_100vh">
+                    <BreadCrumbs pathname={location.pathname} />
+                    <Navbar />
+                    <div className="participant">
+                        <div className="container participant__container">
+                            <div className="participant__about">
+                                <AboutParticipant {...participant} />
+                                <Badge {...participant} />
+                                <Slider />
+                                <div className="participant__links">
+                                    <Link
+                                        className="participant__link"
+                                        href="#"
+                                        target="_blank"
+                                    >
+                                        <i className="bx bxl-vk"></i>
+                                    </Link>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="participant__box">
-                            <img
-                                className="participant__box-img"
-                                src={participant.photo}
-                                alt="Avatar"
-                            />
+                            <div className="participant__box">
+                                <img
+                                    className="participant__box-img"
+                                    src={participant.photo}
+                                    alt="Avatar"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

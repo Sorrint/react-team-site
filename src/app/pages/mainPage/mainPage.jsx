@@ -7,8 +7,9 @@ import Team from "../../components/team";
 const MainPage = () => {
     return (
         <>
-            <Navbar />
             <BreadCrumbs pathname={location.pathname} />
+
+            <Navbar />
             <Hero />
             <Team />
         </>

@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes, { arrayOf } from "prop-types";
 const Background = ({ children }) => {
-    const onSubmit = () => {
-        console.log("тык");
-    };
+    // const onSubmit = () => {
+    //     console.log("тык");
+    // };
     return (
         <>
             <div className="area">
@@ -14,7 +14,7 @@ const Background = ({ children }) => {
                     <li>может</li>
                     <li
                         role="button"
-                        onClick={onSubmit}
+                        // onClick={onSubmit}
                         className="button__hidden"
                     >
                         *

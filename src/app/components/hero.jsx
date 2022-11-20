@@ -22,7 +22,7 @@ const Hero = () => {
                     интерфейса до настройки бэкенда. Мы успешно разработали уже
                     более 120 проектов.
                 </p>
-                <div className="py-6">
+                <div className="py-6 z-20">
                     <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
                         Наша команда
                         <span className="group-hover:rotate-90 duration-300">
