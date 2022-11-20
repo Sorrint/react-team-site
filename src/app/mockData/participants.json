@@ -7,7 +7,7 @@
         "roleInTeam": "Team Leader",
         "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "description": "Обожаю получать новые знания и применять их в своих проектах. Разрабатываю приложения с декабря 2021 года. Работаю со стеком MERN.",
         "technologies": {
             "html": 27,
             "css": 63,
@@ -65,7 +65,11 @@
         "age": 31,
         "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
         "about": "Junior Frontend developer из Нягани.",
-        "description": "Люблю заниматься разработкой, улучшать имеющиеся навыки и приобретать новые, изучая новые технологи, подходы, практики.",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "socialNetworks": {
+            "GitHub": "https://github.com/shabalinyakov",
+            "Telegram": "https://t.me/shabalin_yakov"
+        },
         "technologies": {
             "html": 60,
             "css": 70,
@@ -73,11 +77,6 @@
             "React": 80,
             "Express": 80,
             "NodeJS": 70
-        },
-        "contacts": [
-            { "name": "gmail", "path": "shabalin.yakov@gmail.com" },
-            { "name": "github", "path": "https://github.com/shabalinyakov" },
-            { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
-        ]
+        }
     }
 ]
