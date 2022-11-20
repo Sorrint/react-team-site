@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import Badge from "../../components/badge";
 import BreadCrumbs from "../../components/breadCrumbs";
-import Contacts from "../../components/common/conacts";
+import Contacts from "../../components/common/contacts";
 import Navbar from "../../components/navBar";
 import Slider from "../../components/slider";
 
