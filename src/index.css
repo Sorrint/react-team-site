@@ -114,6 +114,7 @@ code {
     width: 20px;
     height: 20px;
     animation-delay: 0s;
+    z-index: 100;
 }
 
 .circles li:nth-child(6) {
@@ -220,6 +221,6 @@ code {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-height: 100vh;
+    max-height: 100%;
     overflow: hidden;
 }
