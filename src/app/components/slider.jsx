@@ -103,7 +103,7 @@ const Slider = function ({
                     className=" bg-amber-300 rounded-lg"
                     onClick={progressHandler}
                 >
-                    button
+                    {progressType === "line" ? "circle" : "line"}
                 </button>
                 <Arrows />
                 <SlidesList />

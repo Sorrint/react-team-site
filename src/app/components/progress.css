@@ -1,5 +1,6 @@
 .wrapper-progress {
     display: flex;
+    flex-direction: column;
     height: 150px;
     width: 150px;
     font-size: 14px;
