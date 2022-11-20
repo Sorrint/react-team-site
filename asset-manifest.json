@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-team-site/static/css/main.d35300c5.css",
+    "main.js": "/react-team-site/static/js/main.cb401eeb.js",
+    "index.html": "/react-team-site/index.html",
+    "main.d35300c5.css.map": "/react-team-site/static/css/main.d35300c5.css.map",
+    "main.cb401eeb.js.map": "/react-team-site/static/js/main.cb401eeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d35300c5.css",
+    "static/js/main.cb401eeb.js"
+  ]
+}
