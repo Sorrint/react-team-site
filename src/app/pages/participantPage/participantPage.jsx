@@ -20,7 +20,12 @@ const ParticipantPage = () => {
         return (
             <>
                 <div className="wrapper_100vh">
-                    <BreadCrumbs pathname={location.pathname} />
+                    <BreadCrumbs
+                        pathname={location.pathname}
+                        userId={participant._id}
+                        name={participant.name}
+                        surname={participant.surname}
+                    />
                     <Navbar />
                     <div className="participant">
                         <div className="container participant__container">
