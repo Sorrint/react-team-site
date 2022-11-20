@@ -1,21 +1,22 @@
-import ParticipantPage from "./app/pages/participantPage/participantPage";
-import FavouritePage from "./app/pages/favourites/favouritePage";
+import ParticipantPage from "./app/pages/participantPage";
+import FavouritePage from "./app/pages/favouritePage";
 import MainPage from "./app/pages/mainPage/mainPage";
 import { Navigate } from "react-router-dom";
 import React from "react";
 
-const routes = (isLoggedIn, location) => [
+const routes = () => [
     {
         path: "/",
         element: <MainPage />
     },
     {
-        path: "favorite",
+        path: "favourite",
         element: <FavouritePage />
     },
     {
-        path: "participant_page",
-        element: <ParticipantPage />
+        path: "participant_page/:userId",
+        element: <ParticipantPage />,
+        children: [{ path: "*", element: <Navigate to="/" /> }]
     },
     {
         path: "*",

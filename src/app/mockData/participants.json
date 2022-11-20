@@ -1,17 +1,98 @@
 [
     {
+        "_id": "lebedev_anton",
         "name": "Антон",
         "surname": "Лебедев",
         "age": 36,
-        "photo": "image",
+        "roleInTeam": "Team Leader",
+        "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
-        "technologies": {
-            "html": 27,
-            "css": 63,
-            "JS": 44,
-            "React": 68,
-            "Express": 15,
-            "NodeJS": 10
-        }
+        "description": "Обожаю получать новые знания и применять их в своих проектах. Разрабатываю приложения с декабря 2021 года. Работаю со стеком MERN. В проекте реализовал фон, прогресс бар, страницу избранного, сделал сервисы для работы с данными ",
+        "technologies": [
+            { "title": "html", "value": 27, "color": "#d9051b" },
+            { "title": "css", "value": 63, "color": "blue" },
+            { "title": "JS", "value": 44, "color": "#ffdb03" },
+            { "title": "React", "value": 68, "color": "#5059ff" },
+            { "title": "Express", "value": 15, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 10, "color": "#5da269" }
+        ],
+
+        "contacts": [
+            { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
+            { "name": "gmail", "path": "sorrint@gmail.com" },
+            { "name": "github", "path": "https://github.com/Sorrint" },
+            { "name": "telegram", "path": "@Sorrint" }
+        ]
+    },
+    {
+        "_id": "zabava_dmitriy",
+        "name": "Дмитрий",
+        "surname": "Забава",
+        "age": 44,
+        "roleInTeam": "Developer",
+        "photo": "https://avatars.githubusercontent.com/u/102691652?v=4",
+        "about": "Junior Frontend developer из Санкт-Петербурга.",
+        "description": "В марте 2022 я познакомился с Result School  и прошел курс 'HTML & CSS для новичков'. 'Кодинг' увлекательный процесс , очень нравится изучать новые технологии . В проэкте принимал участие в разработке страницы участника и слайдере .",
+        "technologies": [
+            { "title": "html", "value": 40, "color": "#d9051b" },
+            { "title": "css", "value": 35, "color": "blue" },
+            { "title": "JS", "value": 54, "color": "#ffdb03" },
+            { "title": "React", "value": 67, "color": "#5059ff" },
+            { "title": "Express", "value": 14, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 9, "color": "#5da269" }
+        ],
+        "contacts": [
+            { "name": "vkonakte", "path": "https://vk.com/id23930050" },
+            { "name": "gmail", "path": "zdw1978@gmail.com" },
+            { "name": "github", "path": "https://github.com/DmitriyZabava" },
+            { "name": "telegram", "path": "https://t.me/DmitriyZabava" }
+        ]
+    },
+    {
+        "_id": "eugene_gavrilyuk",
+        "name": "Евгений",
+        "surname": "Гаврилюк",
+        "age": 41,
+        "roleInTeam": "Developer",
+        "photo": "https://avatars.githubusercontent.com/u/101366301?v=4",
+        "about": "Frontend developer из Киева",
+        "description": "Любит разрабатывать пользовательские интерфейсы. React для этих целей является хорошим инструментом. В данном проекте принимал участие в разработке дизайна и функционала главной страницы.",
+
+        "contacts": [
+            { "name": "gmail", "path": "egavriluk@gmail.com" },
+            { "name": "github", "path": "https://github.com/Eugene015" },
+            { "name": "telegram", "path": "@EugeneLand" }
+        ],
+        "technologies": [
+            { "title": "html", "value": 45, "color": "#d9051b" },
+            { "title": "css", "value": 67, "color": "blue" },
+            { "title": "JS", "value": 41, "color": "#ffdb03" },
+            { "title": "React", "value": 60, "color": "#5059ff" },
+            { "title": "Express", "value": 14, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 9, "color": "#5da269" }
+        ]
+    },
+    {
+        "_id": "shabalin_yakov",
+        "name": "Яков",
+        "surname": "Шабалин",
+        "age": 31,
+        "roleInTeam": "Developer",
+        "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
+        "about": "Junior Frontend developer из Нягани.",
+        "description": "Люблю заниматься разработкой, улучшать имеющиеся навыки и приобретать новые, изучая новые технологи, подходы, практики.",
+        "technologies": [
+            { "title": "html", "value": 60, "color": "#d9051b" },
+            { "title": "css", "value": 70, "color": "blue" },
+            { "title": "JS", "value": 60, "color": "#ffdb03" },
+            { "title": "React", "value": 80, "color": "#5059ff" },
+            { "title": "Express", "value": 80, "color": "#6f6f6f" },
+            { "title": "NodeJS", "value": 70, "color": "#5da269" }
+        ],
+        "contacts": [
+            { "name": "gmail", "path": "shabalin.yakov@gmail.com" },
+            { "name": "github", "path": "https://github.com/shabalinyakov" },
+            { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
+        ]
     }
 ]
