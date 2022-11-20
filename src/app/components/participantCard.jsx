@@ -2,10 +2,12 @@ import React from "react";
 import Button from "./button";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { setFavouriteUser } from "../services/localStorage.service";
 
 const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     const addToFavourite = () => {
-        return localStorage.setItem("userId", JSON.stringify(userId));
+        return setFavouriteUser(userId);
+        // return localStorage.setItem("userId", JSON.stringify(userId));
     };
     return (
         <div className="flex flex-col items-center max-w-sm rounded overflow-hidden shadow-lg pb-5">
