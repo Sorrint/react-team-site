@@ -22,7 +22,7 @@ const FavouritePage = () => {
                 if (data.length !== 0) {
                     return setFavUsers(data);
                 } else {
-                    return setFavUsers(["нет пользователей"]);
+                    return setFavUsers(["noUsers"]);
                 }
             })
             .catch((error) => console.log(error));
@@ -35,7 +35,11 @@ const FavouritePage = () => {
                 <Navbar />
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     {favUsers ? (
-                        <ParticipantList users={favUsers} />
+                        favUsers[0] === "noUsers" ? (
+                            "Нет пользователей"
+                        ) : (
+                            <ParticipantList users={favUsers} />
+                        )
                     ) : (
                         <div className="flex flex-col justify-center items-center w-full h-full">
                             <ThreeDots
