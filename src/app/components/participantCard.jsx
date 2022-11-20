@@ -19,11 +19,11 @@ const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
                 />
             </div>
             <div className="flex flex-col h-full px-6 py-4 ml-6">
-                <div className="font-bold text-xl mb-2">
+                <div className="text-yellow-400 font-bold text-xl mb-2">
                     {name} {surname}
                 </div>
                 <div className="font-bold mb-2">Возраст: {age}</div>
-                <p className="text-gray-700 text-base">{about}</p>
+                <p className=" font-bold text-base">{about}</p>
             </div>
             <div className="flex justify-around">
                 <div className="px-2">
