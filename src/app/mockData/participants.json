@@ -7,7 +7,7 @@
         "roleInTeam": "Team Leader",
         "photo": "https://github.com/sorrint.png",
         "about": "Frontend developer из Иркутска.",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "description": "Обожаю получать новые знания и применять их в своих проектах. Разрабатываю приложения с декабря 2021 года. Работаю со стеком MERN.",
         "technologies": [
             { "title": "html", "value": 27 },
             { "title": "css", "value": 63 },
@@ -16,6 +16,7 @@
             { "title": "Express", "value": 15 },
             { "title": "NodeJS", "value": 10 }
         ],
+
         "contacts": [
             { "name": "vkonakte", "path": "https://vk.com/antonlebedev2018" },
             { "name": "gmail", "path": "sorrint@gmail.com" },
@@ -91,5 +92,6 @@
             { "name": "github", "path": "https://github.com/shabalinyakov" },
             { "name": "telegram", "path": "https://t.me/shabalin_yakov" }
         ]
+
     }
 ]

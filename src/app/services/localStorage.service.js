@@ -18,6 +18,10 @@ export function setFavouriteUser(userId) {
 
 export function removeFavouriteUser(userId) {
     const users = getFavouriteUsers();
+    if (users.length === 1) {
+        localStorage.removeItem(FAVOURITE_KEY);
+        return localStorage.setItem(FAVOURITE_KEY, JSON.stringify([]));
+    }
     const arr = users.filter((u) => u !== userId);
     return localStorage.setItem(FAVOURITE_KEY, JSON.stringify(arr));
 }
