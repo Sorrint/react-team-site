@@ -1,13 +1,11 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import BreadCrumbs from "./breadCrumbs";
 
 const Hero = () => {
     return (
         <div name="hero" className="w-full h-screen">
             {/* Container */}
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-10">
-                <BreadCrumbs pathname={location.pathname} />
                 <p className="text-yellow-400 py-2">
                     Крутая команда разработчиков
                 </p>
