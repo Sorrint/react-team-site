@@ -1,9 +1,12 @@
 .wrapper-progress {
+    display: flex;
     height: 150px;
     width: 150px;
     font-size: 14px;
     color: white;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-line__full {

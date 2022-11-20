@@ -32,6 +32,10 @@
         "photo": "https://avatars.githubusercontent.com/u/102691652?v=4",
         "about": "Junior Frontend developer из Санкт-Петербурга.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
+        "socialNetworks": {
+            "GitHub": "https://github.com/DmitriyZabava",
+            "Telegram": "https://t.me/DmitriyZabava"
+        },
         "technologies": {
             "html": 40,
             "css": 35,
@@ -46,6 +50,7 @@
         "name": "Евгений",
         "surname": "Гаврилюк",
         "age": 41,
+        "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/101366301?v=4",
         "about": "Frontend developer из Киева",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",
@@ -63,6 +68,7 @@
         "name": "Яков",
         "surname": "Шабалин",
         "age": 31,
+        "roleInTeam": "Developer",
         "photo": "https://avatars.githubusercontent.com/u/107841979?v=4",
         "about": "Junior Frontend developer из Нягани.",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps .Lorem ipsum dolor sit amet consectetur adipisicing elit edras trumoi daforts ferutoi seromps",

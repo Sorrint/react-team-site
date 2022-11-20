@@ -28,12 +28,18 @@ const ParticipantPage = () => {
                         surname={participant.surname}
                     />
                     <Navbar />
-                    <div className="participant">
+                    <div className="participant pl-10">
                         <div className="container participant__container">
                             <div className="participant__about">
                                 <AboutParticipant {...participant} />
                                 <Badge {...participant} />
-                                <Slider />
+                                <Slider
+                                    autoPlay={false}
+                                    autoPlayTime={9000}
+                                    width={"50%"}
+                                    height={"40%"}
+                                    {...participant}
+                                />
                                 <div className="participant__links">
                                     <Link
                                         className="participant__link"
