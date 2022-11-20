@@ -35,20 +35,24 @@
 .participant__link:hover {
     color: #4facfe;
 }
-
-.participant__box {
+.participant__contacts {
+    display: flex;
+    flex-direction: column;
     max-width: 480px;
     max-height: 480px;
     justify-self: center;
+}
+.participant__box {
     overflow: hidden;
     border: 10px solid #fff;
-
+    color: white;
     animation: ava-animate 5s infinite alternate;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .participant__box-img {
     animation: ava-bg 3s infinite alternate;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1028px) {
@@ -101,4 +105,10 @@
     to {
         backdrop-filter: hue-rotate(90deg);
     }
+}
+
+.contacts {
+    height: 20px;
+    color: white;
+    font-size: 20px;
 }
