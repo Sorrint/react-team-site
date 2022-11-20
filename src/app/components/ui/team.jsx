@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ParticipantList from "./participantList";
+import ParticipantList from "../common/participantList";
 
 const Team = ({ users }) => {
     return (

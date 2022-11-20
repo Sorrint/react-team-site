@@ -6,7 +6,7 @@ import {
     getFavouriteUsers,
     removeFavouriteUser,
     setFavouriteUser
-} from "../services/localStorage.service";
+} from "../../services/localStorage.service";
 
 const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     const [isFavourite, setFavourite] = useState(false);

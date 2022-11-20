@@ -1,10 +1,10 @@
 import React, { useEffect, useState, createContext } from "react";
 import PropTypes from "prop-types";
 
-import Arrows from "./ui/slider/arrows";
+import Arrows from "../common/slider/arrows";
 // import Dots from "./ui/slider/dots";
 
-import SlidesList from "./ui/slider/slidesList";
+import SlidesList from "../common/slider/slidesList";
 
 export const SliderContext = createContext();
 

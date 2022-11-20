@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
-import Badge from "../../components/badge";
-import BreadCrumbs from "../../components/breadCrumbs";
+import Badge from "../../components/common/badge";
+import BreadCrumbs from "../../components/common/breadCrumbs";
 import Contacts from "../../components/common/contacts";
-import Navbar from "../../components/navBar";
-import Slider from "../../components/slider";
+import Navbar from "../../components/ui/navBar";
+import Slider from "../../components/ui/slider";
 
 import AboutParticipant from "../../components/ui/aboutParticipant";
 import participantService from "../../services/participants.service";

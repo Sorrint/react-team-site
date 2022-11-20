@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { SliderContext } from "../../slider";
+import { SliderContext } from "../../ui/slider";
 
 const Arrows = () => {
     const { changeSlide } = useContext(SliderContext);

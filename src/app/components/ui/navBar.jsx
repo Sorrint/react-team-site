@@ -42,14 +42,10 @@ const Navbar = () => {
                         </NavLink>
                     )}
                 </li>
+
                 <li>
                     <NavLink to="favourite" smooth="true" duration={500}>
                         Избранное
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="contacts" smooth="true" duration={500}>
-                        Контакты
                     </NavLink>
                 </li>
             </ul>
@@ -109,18 +105,6 @@ const Navbar = () => {
                         duration={500}
                     >
                         Избранное
-                    </NavLink>
-                </li>
-
-                <li className="py-6 text-4xl">
-                    {" "}
-                    <NavLink
-                        onClick={handleClick}
-                        to="contacts"
-                        smooth="true"
-                        duration={500}
-                    >
-                        Контакты
                     </NavLink>
                 </li>
             </ul>

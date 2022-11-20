@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import { useLocation } from "react-router-dom";
-import BreadCrubms from "../../components/breadCrumbs";
-import Navbar from "../../components/navBar";
-import ParticipantList from "../../components/participantList";
+import BreadCrubms from "../../components/common/breadCrumbs";
+import Navbar from "../../components/ui/navBar";
+import ParticipantList from "../../components/common/participantList";
 import { getFavouriteUsers } from "../../services/localStorage.service";
 import participantService from "../../services/participants.service";
 

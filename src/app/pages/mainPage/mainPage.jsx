@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import BreadCrumbs from "../../components/breadCrumbs";
-import Hero from "../../components/hero";
-import Navbar from "../../components/navBar";
+import BreadCrumbs from "../../components/common/breadCrumbs";
+import Hero from "../../components/ui/hero";
+import Navbar from "../../components/ui/navBar";
 import participantService from "../../services/participants.service";
-import Team from "../../components/team";
+import Team from "../../components/ui/team";
 import { ThreeDots } from "react-loader-spinner";
-import SocialIcon from "../../components/socialIcon";
+import SocialIcon from "../../components/common/socialIcon";
 
 const MainPage = () => {
     const [users, setUsers] = useState();

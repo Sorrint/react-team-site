@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import PropTypes from "prop-types";
-import Progress from "../../progress";
-import { SliderContext } from "../../slider";
+import Progress from "../progress/progress";
+import { SliderContext } from "../../ui/slider";
 
 const SlideImage = ({ value, name, color }) => {
     const { progressType } = useContext(SliderContext);

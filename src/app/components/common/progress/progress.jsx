@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./progress.css";
-import ProgressLine from "./common/progressLine";
+import ProgressLine from "../../common/progressLine";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
