@@ -4,14 +4,18 @@ import PropTypes from "prop-types";
 const AboutParticipant = ({ about, name, surname, age, description }) => {
     return (
         <>
-            <h1 className="text-2xl  mb-2 md:text-5xl md:mb-5 md:leading-tight">
+            <h1 className="text-4xl sm:text-4xl font-bold text-[#8892b0] pt-6 pb-2">
                 {about}
             </h1>
-            <h2 className="md:text-4xl md:font-normal text-xl font-light">
+            <h2 className="text-4xl sm:text-6xl font-bold text-[#e1e1e1] pb-2">
                 {name} {surname}
             </h2>
-            <p>Мне {age}</p>
-            <p className=" md:text-xl text-sm">{description}</p>
+            <p className="text-2xl sm:text-2xl font-bold text-[#8892b0] pb-6">
+                Мне {age}
+            </p>
+            <p className=" md:text-xl text-sm text-[#8892b0] pb-6">
+                {description}
+            </p>
         </>
     );
 };
