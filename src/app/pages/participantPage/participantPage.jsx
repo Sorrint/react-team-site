@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import Badge from "../../components/badge";
 import BreadCrumbs from "../../components/breadCrumbs";
 import Contacts from "../../components/common/contacts";
@@ -40,15 +40,6 @@ const ParticipantPage = () => {
                                     height={"40%"}
                                     {...participant}
                                 />
-                                <div className="participant__links">
-                                    <Link
-                                        className="participant__link"
-                                        href="#"
-                                        target="_blank"
-                                    >
-                                        <i className="bx bxl-vk"></i>
-                                    </Link>
-                                </div>
                             </div>
                             <div className="participant__contacts">
                                 <div className="participant__box">
