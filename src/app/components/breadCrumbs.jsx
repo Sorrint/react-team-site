@@ -34,8 +34,6 @@ const BreadCrumbs = ({ pathname }) => {
     const getText = (element, length) => {
         const route = routes.find((item) => item.path === element);
         const index = elements.findIndex((item) => item === element);
-
-        console.log(index);
         if (!route) return "";
         return index + 1 === length ? route.name : <>{route.name}</>;
     };
