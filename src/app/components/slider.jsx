@@ -100,10 +100,12 @@ const Slider = function ({
                 }}
             >
                 <button
-                    className=" bg-amber-300 rounded-lg"
+                    className="bg-amber-300 rounded-lg py-2 px-4"
                     onClick={progressHandler}
                 >
-                    {progressType === "line" ? "circle" : "line"}
+                    {progressType === "line"
+                        ? "Круглый прогресс-бар"
+                        : "Прогресс-бар линия"}
                 </button>
                 <Arrows />
                 <SlidesList />
