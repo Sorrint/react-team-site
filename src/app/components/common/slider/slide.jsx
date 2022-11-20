@@ -15,7 +15,7 @@ const Slide = ({ title, value, color }) => {
 Slide.propTypes = {
     title: PropTypes.string,
     value: PropTypes.number,
-    color: PropTypes.color
+    color: PropTypes.string
 };
 
 export default Slide;
