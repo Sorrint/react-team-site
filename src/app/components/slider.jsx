@@ -8,18 +8,19 @@ import SlidesList from "./ui/slider/slidesList";
 
 export const SliderContext = createContext();
 
-const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
+const Slider = function ({
+    width,
+    height,
+    autoPlay,
+    autoPlayTime,
+    technologies
+}) {
     const [items, setItems] = useState([]);
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null);
 
     useEffect(() => {
-        const loadData = async () => {
-            await fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
-                .then((response) => response.json())
-                .then((json) => setItems(json));
-        };
-        loadData();
+        setItems(Object.entries(technologies));
     }, []);
 
     const changeSlide = (direction = 1) => {
@@ -87,7 +88,8 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
                     changeSlide,
                     slidesCount: items.length,
                     slideNumber: slide,
-                    items
+                    items,
+                    technologies
                 }}
             >
                 <Arrows />
@@ -102,7 +104,8 @@ Slider.propTypes = {
     autoPlay: PropTypes.bool,
     autoPlayTime: PropTypes.number,
     width: PropTypes.string,
-    height: PropTypes.string
+    height: PropTypes.string,
+    technologies: PropTypes.object
 };
 
 Slider.defaultProps = {

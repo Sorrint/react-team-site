@@ -28,10 +28,11 @@ const ParticipantPage = () => {
                                 <AboutParticipant {...participant} />
                                 <Badge {...participant} />
                                 <Slider
-                                    autoPlay={true}
-                                    autoPlayTime={5000}
-                                    width={"60%"}
-                                    height={"50%"}
+                                    autoPlay={false}
+                                    autoPlayTime={9000}
+                                    width={"50%"}
+                                    height={"40%"}
+                                    {...participant}
                                 />
                                 <div className="participant__links">
                                     <Link
