@@ -33,7 +33,18 @@ code {
 }
 .breadcrumbs {
     position: relative;
+    margin-left: 20px;
 }
+
+.breadcrumbs li {
+    padding: 0;
+    display: flex;
+}
+
+.breadcrumb__divider {
+    margin: 0 8px;
+}
+
 .context {
     width: 100%;
     position: absolute;
@@ -102,7 +113,7 @@ code {
     box-shadow: 0 0 2px #fc614d, 0 0 10px #fc614d;
 }
 
-.random li {
+.violete li {
     background: #8b6edc;
     box-shadow: 0 0 2px #8b6edc, 0 0 10px #8b6edc;
 }
