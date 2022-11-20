@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ThreeDots } from "react-loader-spinner";
 import { useLocation } from "react-router-dom";
 import BreadCrubms from "../../components/breadCrumbs";
 import Navbar from "../../components/navBar";
@@ -21,10 +22,25 @@ const FavouritePage = () => {
     return (
         <>
             <div className="wrapper_100vh">
-                <Navbar />
                 <BreadCrubms pathname={location.pathname} />
+                <Navbar />
                 <div className="flex flex-col justify-center items-center w-full h-full">
-                    {favUsers && <ParticipantList users={favUsers} />}
+                    {favUsers ? (
+                        <ParticipantList users={favUsers} />
+                    ) : (
+                        <div className="flex flex-col justify-center items-center w-full h-full">
+                            <ThreeDots
+                                height="80"
+                                width="80"
+                                radius="9"
+                                color="#bab1ff"
+                                ariaLabel="three-dots-loading"
+                                wrapperStyle={{}}
+                                wrapperClassName=""
+                                visible={true}
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </>
