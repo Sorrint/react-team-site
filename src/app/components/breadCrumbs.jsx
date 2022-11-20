@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
 const BreadCrumbs = ({ pathname, userId, name, surname }) => {
     const [elements, setElements] = useState();
@@ -25,10 +26,17 @@ const BreadCrumbs = ({ pathname, userId, name, surname }) => {
     const getText = (element, length) => {
         const route = routes.find((item) => item.path === element);
         const index = elements.findIndex((item) => item === element);
+
         if (!route && userId === element) {
             return `${surname} ${name}`;
         }
-        return index + 1 === length ? route.name : <>{route.name}</>;
+        return index === 0 ? (
+            <NavLink to="/" smooth="true" duration={500}>
+                {route.name}
+            </NavLink>
+        ) : (
+            <>{route.name}</>
+        );
     };
     if (elements) {
         return (
