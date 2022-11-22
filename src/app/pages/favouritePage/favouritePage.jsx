@@ -1,32 +1,30 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
 import { useLocation } from "react-router-dom";
 import BreadCrubms from "../../components/common/breadCrumbs";
 import Navbar from "../../components/ui/navBar";
 import ParticipantList from "../../components/common/participantList";
-import { getFavouriteUsers } from "../../services/localStorage.service";
 import participantService from "../../services/participants.service";
+import { getFavouriteUsers } from "../../services/localStorage.service";
 
 const FavouritePage = () => {
     const [favUsers, setFavUsers] = useState();
     const location = useLocation();
 
     const favUsersIds = getFavouriteUsers();
-    const favUsersChange = useCallback(() => {
-        participantService.getFavourites();
-    });
+
     useEffect(() => {
-        participantService
-            .getFavourites(favUsersIds)
-            .then((data) => {
-                if (data.length !== 0) {
-                    return setFavUsers(data);
-                } else {
-                    return setFavUsers(["noUsers"]);
-                }
-            })
-            .catch((error) => console.log(error));
-    }, [favUsersChange]);
+        participantService.getFavourites(favUsersIds).then((data) => {
+            if (data.length === 0) {
+                return setFavUsers([]);
+            } else {
+                return setFavUsers(data);
+            }
+        });
+    }, []);
+    const onRemove = (id) => {
+        setFavUsers((prevState) => prevState.filter((item) => item._id !== id));
+    };
 
     return (
         <>
@@ -35,10 +33,13 @@ const FavouritePage = () => {
                 <Navbar />
                 <div className="flex flex-col justify-center items-center w-full h-full">
                     {favUsers ? (
-                        favUsers[0] === "noUsers" ? (
+                        favUsers.length === 0 ? (
                             "Нет пользователей"
                         ) : (
-                            <ParticipantList users={favUsers} />
+                            <ParticipantList
+                                users={favUsers}
+                                onRemove={onRemove}
+                            />
                         )
                     ) : (
                         <div className="flex flex-col justify-center items-center w-full h-full">

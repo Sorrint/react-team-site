@@ -8,7 +8,16 @@ import {
     setFavouriteUser
 } from "../../services/localStorage.service";
 
-const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
+const ParticipantCard = ({
+    photo,
+    name,
+    surname,
+    age,
+    about,
+    userId,
+    onRemove,
+    onAdd
+}) => {
     const [isFavourite, setFavourite] = useState(false);
 
     useEffect(() => {
@@ -20,11 +29,13 @@ const ParticipantCard = ({ photo, name, surname, age, about, userId }) => {
     }, []);
 
     const addToFavourite = () => {
+        if (onAdd) onAdd(userId);
         setFavouriteUser(userId);
         setFavourite(true);
     };
 
     const removeFromFavourite = () => {
+        if (onRemove) onRemove(userId);
         removeFavouriteUser(userId);
         setFavourite(false);
     };
@@ -76,7 +87,9 @@ ParticipantCard.propTypes = {
     surname: PropTypes.string,
     age: PropTypes.number,
     about: PropTypes.string,
-    userId: PropTypes.string
+    userId: PropTypes.string,
+    onRemove: PropTypes.func,
+    onAdd: PropTypes.func
 };
 
 export default ParticipantCard;

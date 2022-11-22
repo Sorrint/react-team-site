@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ParticipantCard from "./participantCard";
-const ParticipantList = ({ users }) => {
+const ParticipantList = ({ users, onRemove, onAdd }) => {
+    console.log(users);
     return (
         <div className="max-w-[1000px] grid place-content-center sm:grid-cols-2 gap-y-16 gap-x-8 px-4 py-10 z-20">
             {users.map((user) => {
@@ -14,6 +15,8 @@ const ParticipantList = ({ users }) => {
                         age={user.age}
                         about={user.about}
                         userId={user._id}
+                        onRemove={onRemove}
+                        onAdd={onAdd}
                     />
                 );
             })}
@@ -22,7 +25,9 @@ const ParticipantList = ({ users }) => {
 };
 
 ParticipantList.propTypes = {
-    users: PropTypes.array
+    users: PropTypes.array,
+    onRemove: PropTypes.func,
+    onAdd: PropTypes.func
 };
 
 export default ParticipantList;
